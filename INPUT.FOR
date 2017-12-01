@@ -18,6 +18,14 @@
      !        lActRSU,lDummy
       dimension iUnit(NUnitD)
 
+*---- START gettim and getdat gnu alternative function PARAMETERS ----
+      integer dtv(8)
+      character(8)  :: date
+      character(10) :: time
+      character(5)  :: zone
+      integer hundred
+*---- START gettim and getdat gnu alternative function PARAMETERS----
+
       iVer = iGetFileVersion(30,1)
       read(30,*,err=901)
       read(30,*,err=901)
@@ -140,8 +148,19 @@ c        read(*,*)
       do 11 i=1,ii
         write(iUnit(i),*,err=903)'******* Program HYDRUS'
         write(iUnit(i),*,err=903)'******* ',Hed
-        call getdat(ii,imonth,iday)
-        call gettim(ihours,mins,isecs,ii)
+*---- START gettim and getdat gnu alternative function ----
+        call date_and_time(date,time,zone,dtv)
+        hundred=100
+        iYear=dtv(1)
+        iMonth=dtv(2)
+        iDay=dtv(3)
+        iHours=dtv(5)
+        iMins=dtv(6)
+        iSecs=dtv(7)
+        i100th=mod(dtv(8),hundred)
+*        call getdat(ii,imonth,iday)
+*        call gettim(ihours,mins,isecs,ii)
+*---- END gettim and getdat gnu alternative function ----
         write(iUnit(i),100,err=903) iday,imonth,ihours,mins,isecs
         write(iUnit(i),*,err=903)'Units: L = ',LUnit,', T = ',TUnit,
      !                                ', M = ',MUnit
