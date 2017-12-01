@@ -1,0 +1,31 @@
+      1
+Test example for Onestep outflow method
+Test example for Onestep outflow method
+   NOBB     MIT iWeight
+     10      50       0
+  lWatF  lChemF    NMat
+      t       f       2
+  Model   Hysteresis
+      0       0
+    thr     ths    Alfa       n         Ks       l
+   0.15   0.388   0.025     1.5        5.4     0.5 
+      1       0       1       1          0       0 
+      0       0       0     1.1          0       0 
+   0.25       0       0       3          0       0 
+    thr     ths    Alfa       n         Ks       l
+      0       1  1e-020   1.001      0.003     0.5 
+      0       0       0       0          0       0 
+      0       0       0       0          0       0 
+      0       0       0       0          0       0 
+      HO(N)         FOS   ITYPE(N) POS     WTS
+       0.017      -0.0786     0     2        1 
+       0.033      -0.1616     0     2        1 
+        0.05      -0.2097     0     2        1 
+       0.167      -0.3408     0     2        1 
+         0.5      -0.4456     0     2        1 
+       1.033       -0.498     0     2        1 
+        2.75      -0.5614     0     2        1 
+       5.417      -0.5937     0     2        1 
+         100      -0.6824     0     2        1 
+      -15000        0.157     5     1        1 
+end*** END OF INPUT FILE 'FIT.IN' **********************************

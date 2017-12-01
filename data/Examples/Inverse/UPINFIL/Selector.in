@@ -1,0 +1,35 @@
+*** BLOCK A: BASIC INFORMATION *****************************************
+Heading
+Upward infiltration with bottom tension
+LUnit  TUnit  MUnit  (indicated units are obligatory for all input data)
+cm
+sec
+mmol
+lWat   lChem lTemp  lSink lRoot lShort lWDep lScreen lVariabBC lEquil lInverse
+ t     f     f      f     f     f      f     f       f         t         t
+NMat    NLay  CosAlpha
+  1       1       1
+*** BLOCK B: WATER FLOW INFORMATION ************************************
+MaxIt   TolTh   TolH       (maximum number of iterations and tolerances)
+  20   0.0001    0.1
+TopInf WLayer KodTop InitCond
+ f     f      -1       f
+BotInf qGWLF FreeD SeepF KodBot DrainF
+ f     f     f     f      1      f
+         rTop         rBot        rRoot
+           0            0            0
+    hTab1   hTabN
+    1e-006   10000
+    Model   Hysteresis
+      0          0
+   thr     ths    Alfa      n         Ks       l
+  0.067    0.45    0.02    1.41   0.000125       1 
+*** BLOCK C: TIME INFORMATION ******************************************
+        dt       dtMin       dtMax     DMul    DMul2  ItMin ItMax  MPL
+          1        0.01      432000     1.3     0.7     3     7    10
+      tInit        tMax
+          0        7200
+TPrint(1),TPrint(2),...,TPrint(MPL)
+        720        1440        2160        2880        3600        4320 
+       5040        5760        6480        7200 
+*** END OF INPUT FILE 'SELECTOR.IN' ************************************

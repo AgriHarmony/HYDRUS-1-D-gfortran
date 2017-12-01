@@ -1,0 +1,322 @@
+ ******* Program HYDRUS
+ ******* Transport with multiple cation exchange (verification problem 6)       
+  
+ Date:  30.10.    Time:   9:21:12
+ Units: L = cm   , T = days , M = mmol 
+
+-----------------------------------------------------
+ Time       [T]         .0000
+-----------------------------------------------------
+ Sub-region num.                   1
+-----------------------------------------------------
+ Area     [L]         .800E+01   .800E+01
+ W-volume [L]         .400E+01   .400E+01
+ In-flow  [L/T]       .000E+00   .000E+00
+ h Mean   [L]         .000E+00   .000E+00
+ ConcVol  [M/L2] 1    .294E-02   .294E-02
+ cMean    [M/L3] 1    .735E-03   .735E-03
+ ConcVol  [M/L2] 2    .293E-02   .293E-02
+ cMean    [M/L3] 2    .732E-03   .732E-03
+ ConcVol  [M/L2] 3    .400E-06   .400E-06
+ cMean    [M/L3] 3    .100E-06   .100E-06
+ ConcVol  [M/L2] 4    .400E-06   .400E-06
+ cMean    [M/L3] 4    .100E-06   .100E-06
+ ConcVol  [M/L2] 5    .300E-02   .300E-02
+ cMean    [M/L3] 5    .750E-03   .750E-03
+ ConcVol  [M/L2] 6    .240E-01   .240E-01
+ cMean    [M/L3] 6    .600E-02   .600E-02
+ ConcVol  [M/L2] 7    .800E-02   .800E-02
+ cMean    [M/L3] 7    .200E-02   .200E-02
+ ConcVol  [M/L2] 8    .200E-02   .200E-02
+ cMean    [M/L3] 8    .500E-03   .500E-03
+ ConcVol  [M/L2] 9    .360E-03   .360E-03
+ cMean    [M/L3] 9    .900E-04   .900E-04
+ ConcVol  [M/L2]10    .100E-02   .100E-02
+ cMean    [M/L3]10    .250E-03   .250E-03
+ ConcVol  [M/L2]11    .400E-03   .400E-03
+ cMean    [M/L3]11    .100E-03   .100E-03
+ ConcVol  [M/L2]12    .446E-01   .446E-01
+ cMean    [M/L3]12    .112E-01   .112E-01
+ Top Flux [L/T]      -.100E+01
+ Bot Flux [L/T]      -.100E+01
+-----------------------------------------------------
+
+-----------------------------------------------------
+ Time       [T]         .5000
+-----------------------------------------------------
+ Sub-region num.                   1
+-----------------------------------------------------
+ Area     [L]         .800E+01   .800E+01
+ ConcVol  [M/L2] 1    .391E-02   .391E-02
+ cMean    [M/L3] 1    .977E-03   .977E-03
+ ConcVol  [M/L2] 2    .319E-02   .319E-02
+ cMean    [M/L3] 2    .798E-03   .798E-03
+ ConcVol  [M/L2] 3    .500E-02   .500E-02
+ cMean    [M/L3] 3    .125E-02   .125E-02
+ ConcVol  [M/L2] 4    .619E-03   .619E-03
+ cMean    [M/L3] 4    .155E-03   .155E-03
+ ConcVol  [M/L2] 5    .359E-02   .359E-02
+ cMean    [M/L3] 5    .897E-03   .897E-03
+ ConcVol  [M/L2] 6    .218E-01   .218E-01
+ cMean    [M/L3] 6    .545E-02   .545E-02
+ ConcVol  [M/L2] 7    .784E-02   .784E-02
+ cMean    [M/L3] 7    .196E-02   .196E-02
+ ConcVol  [M/L2] 8    .203E-02   .203E-02
+ cMean    [M/L3] 8    .507E-03   .507E-03
+ ConcVol  [M/L2] 9    .436E-03   .436E-03
+ cMean    [M/L3] 9    .109E-03   .109E-03
+ ConcVol  [M/L2]10    .118E-02   .118E-02
+ cMean    [M/L3]10    .295E-03   .295E-03
+ ConcVol  [M/L2]11    .493E-03   .493E-03
+ cMean    [M/L3]11    .123E-03   .123E-03
+ ConcVol  [M/L2]12    .409E-01   .409E-01
+ cMean    [M/L3]12    .102E-01   .102E-01
+ CncBalT  [M]    1    .322E-07
+ CncBalR  [%]    1        .003
+ CncBalT  [M]    2    .171E-07
+ CncBalR  [%]    2        .002
+ CncBalT  [M]    3    .108E-06
+ CncBalR  [%]    3        .002
+ CncBalT  [M]    4    .106E-11
+ CncBalR  [%]    4        .000
+ CncBalT  [M]    5    .453E-08
+ CncBalR  [%]    5        .000
+ CncBalT  [M]    6    .271E-09
+ CncBalR  [%]    6        .000
+ CncBalT  [M]    7    .666E-08
+ CncBalR  [%]    7        .001
+ CncBalT  [M]    8    .212E-08
+ CncBalR  [%]    8        .000
+ CncBalT  [M]    9    .118E-08
+ CncBalR  [%]    9        .000
+ CncBalT  [M]   10    .153E-08
+ CncBalR  [%]   10        .000
+ CncBalT  [M]   11    .916E-09
+ CncBalR  [%]   11        .000
+ CncBalT  [M]   12   -.806E-07
+ CncBalR  [%]   12        .001
+-----------------------------------------------------
+
+-----------------------------------------------------
+ Time       [T]        1.0000
+-----------------------------------------------------
+ Sub-region num.                   1
+-----------------------------------------------------
+ Area     [L]         .800E+01   .800E+01
+ ConcVol  [M/L2] 1    .483E-02   .483E-02
+ cMean    [M/L3] 1    .121E-02   .121E-02
+ ConcVol  [M/L2] 2    .342E-02   .342E-02
+ cMean    [M/L3] 2    .856E-03   .856E-03
+ ConcVol  [M/L2] 3    .998E-02   .998E-02
+ cMean    [M/L3] 3    .250E-02   .250E-02
+ ConcVol  [M/L2] 4    .137E-02   .137E-02
+ cMean    [M/L3] 4    .341E-03   .341E-03
+ ConcVol  [M/L2] 5    .413E-02   .413E-02
+ cMean    [M/L3] 5    .103E-02   .103E-02
+ ConcVol  [M/L2] 6    .195E-01   .195E-01
+ cMean    [M/L3] 6    .487E-02   .487E-02
+ ConcVol  [M/L2] 7    .759E-02   .759E-02
+ cMean    [M/L3] 7    .190E-02   .190E-02
+ ConcVol  [M/L2] 8    .209E-02   .209E-02
+ cMean    [M/L3] 8    .522E-03   .522E-03
+ ConcVol  [M/L2] 9    .500E-03   .500E-03
+ cMean    [M/L3] 9    .125E-03   .125E-03
+ ConcVol  [M/L2]10    .133E-02   .133E-02
+ cMean    [M/L3]10    .334E-03   .334E-03
+ ConcVol  [M/L2]11    .577E-03   .577E-03
+ cMean    [M/L3]11    .144E-03   .144E-03
+ ConcVol  [M/L2]12    .372E-01   .372E-01
+ cMean    [M/L3]12    .929E-02   .929E-02
+ CncBalT  [M]    1    .268E-05
+ CncBalR  [%]    1        .125
+ CncBalT  [M]    2    .142E-05
+ CncBalR  [%]    2        .075
+ CncBalT  [M]    3    .902E-05
+ CncBalR  [%]    3        .090
+ CncBalT  [M]    4    .209E-09
+ CncBalR  [%]    4        .000
+ CncBalT  [M]    5    .579E-06
+ CncBalR  [%]    5        .031
+ CncBalT  [M]    6   -.101E-05
+ CncBalR  [%]    6        .017
+ CncBalT  [M]    7    .817E-06
+ CncBalR  [%]    7        .041
+ CncBalT  [M]    8    .220E-06
+ CncBalR  [%]    8        .012
+ CncBalT  [M]    9    .124E-06
+ CncBalR  [%]    9        .007
+ CncBalT  [M]   10    .192E-06
+ CncBalR  [%]   10        .010
+ CncBalT  [M]   11    .103E-06
+ CncBalR  [%]   11        .005
+ CncBalT  [M]   12   -.672E-05
+ CncBalR  [%]   12        .045
+-----------------------------------------------------
+
+-----------------------------------------------------
+ Time       [T]        3.0000
+-----------------------------------------------------
+ Sub-region num.                   1
+-----------------------------------------------------
+ Area     [L]         .800E+01   .800E+01
+ ConcVol  [M/L2] 1    .711E-02   .711E-02
+ cMean    [M/L3] 1    .178E-02   .178E-02
+ ConcVol  [M/L2] 2    .345E-02   .345E-02
+ cMean    [M/L3] 2    .863E-03   .863E-03
+ ConcVol  [M/L2] 3    .261E-01   .261E-01
+ cMean    [M/L3] 3    .653E-02   .653E-02
+ ConcVol  [M/L2] 4    .464E-02   .464E-02
+ cMean    [M/L3] 4    .116E-02   .116E-02
+ ConcVol  [M/L2] 5    .582E-02   .582E-02
+ cMean    [M/L3] 5    .145E-02   .145E-02
+ ConcVol  [M/L2] 6    .107E-01   .107E-01
+ cMean    [M/L3] 6    .269E-02   .269E-02
+ ConcVol  [M/L2] 7    .601E-02   .601E-02
+ cMean    [M/L3] 7    .150E-02   .150E-02
+ ConcVol  [M/L2] 8    .227E-02   .227E-02
+ cMean    [M/L3] 8    .569E-03   .569E-03
+ ConcVol  [M/L2] 9    .658E-03   .658E-03
+ cMean    [M/L3] 9    .165E-03   .165E-03
+ ConcVol  [M/L2]10    .179E-02   .179E-02
+ cMean    [M/L3]10    .447E-03   .447E-03
+ ConcVol  [M/L2]11    .832E-03   .832E-03
+ cMean    [M/L3]11    .208E-03   .208E-03
+ ConcVol  [M/L2]12    .252E-01   .252E-01
+ cMean    [M/L3]12    .629E-02   .629E-02
+ CncBalT  [M]    1    .450E-04
+ CncBalR  [%]    1        .596
+ CncBalT  [M]    2    .150E-04
+ CncBalR  [%]    2        .359
+ CncBalT  [M]    3    .215E-03
+ CncBalR  [%]    3        .629
+ CncBalT  [M]    4    .390E-05
+ CncBalR  [%]    4        .026
+ CncBalT  [M]    5    .403E-04
+ CncBalR  [%]    5        .705
+ CncBalT  [M]    6   -.110E-03
+ CncBalR  [%]    6        .656
+ CncBalT  [M]    7   -.252E-05
+ CncBalR  [%]    7        .040
+ CncBalT  [M]    8    .317E-05
+ CncBalR  [%]    8        .076
+ CncBalT  [M]    9    .651E-05
+ CncBalR  [%]    9        .156
+ CncBalT  [M]   10    .137E-04
+ CncBalR  [%]   10        .328
+ CncBalT  [M]   11    .700E-05
+ CncBalR  [%]   11        .168
+ CncBalT  [M]   12   -.160E-03
+ CncBalR  [%]   12        .385
+-----------------------------------------------------
+
+-----------------------------------------------------
+ Time       [T]        9.0000
+-----------------------------------------------------
+ Sub-region num.                   1
+-----------------------------------------------------
+ Area     [L]         .800E+01   .800E+01
+ ConcVol  [M/L2] 1    .587E-02   .587E-02
+ cMean    [M/L3] 1    .147E-02   .147E-02
+ ConcVol  [M/L2] 2    .406E-03   .406E-03
+ cMean    [M/L3] 2    .102E-03   .102E-03
+ ConcVol  [M/L2] 3    .390E-01   .390E-01
+ cMean    [M/L3] 3    .974E-02   .974E-02
+ ConcVol  [M/L2] 4    .135E-01   .135E-01
+ cMean    [M/L3] 4    .338E-02   .338E-02
+ ConcVol  [M/L2] 5    .526E-02   .526E-02
+ cMean    [M/L3] 5    .131E-02   .131E-02
+ ConcVol  [M/L2] 6    .108E-02   .108E-02
+ cMean    [M/L3] 6    .270E-03   .270E-03
+ ConcVol  [M/L2] 7    .134E-02   .134E-02
+ cMean    [M/L3] 7    .334E-03   .334E-03
+ ConcVol  [M/L2] 8    .194E-02   .194E-02
+ cMean    [M/L3] 8    .484E-03   .484E-03
+ ConcVol  [M/L2] 9    .223E-03   .223E-03
+ cMean    [M/L3] 9    .556E-04   .556E-04
+ ConcVol  [M/L2]10    .113E-02   .113E-02
+ cMean    [M/L3]10    .282E-03   .282E-03
+ ConcVol  [M/L2]11    .511E-03   .511E-03
+ cMean    [M/L3]11    .128E-03   .128E-03
+ ConcVol  [M/L2]12    .156E-01   .156E-01
+ cMean    [M/L3]12    .389E-02   .389E-02
+ CncBalT  [M]    1   -.223E-04
+ CncBalR  [%]    1        .082
+ CncBalT  [M]    2   -.890E-04
+ CncBalR  [%]    2       1.211
+ CncBalT  [M]    3    .478E-03
+ CncBalR  [%]    3        .338
+ CncBalT  [M]    4    .336E-03
+ CncBalR  [%]    4        .661
+ CncBalT  [M]    5   -.241E-04
+ CncBalR  [%]    5        .109
+ CncBalT  [M]    6   -.339E-03
+ CncBalR  [%]    6       1.226
+ CncBalT  [M]    7   -.163E-03
+ CncBalR  [%]    7       1.131
+ CncBalT  [M]    8   -.150E-04
+ CncBalR  [%]    8        .224
+ CncBalT  [M]    9   -.153E-04
+ CncBalR  [%]    9        .523
+ CncBalT  [M]   10   -.266E-04
+ CncBalR  [%]   10        .596
+ CncBalT  [M]   11   -.137E-04
+ CncBalR  [%]   11        .468
+ CncBalT  [M]   12   -.356E-03
+ CncBalR  [%]   12        .374
+-----------------------------------------------------
+
+-----------------------------------------------------
+ Time       [T]       15.0000
+-----------------------------------------------------
+ Sub-region num.                   1
+-----------------------------------------------------
+ Area     [L]         .800E+01   .800E+01
+ ConcVol  [M/L2] 1    .563E-02   .563E-02
+ cMean    [M/L3] 1    .141E-02   .141E-02
+ ConcVol  [M/L2] 2    .343E-04   .343E-04
+ cMean    [M/L3] 2    .857E-05   .857E-05
+ ConcVol  [M/L2] 3    .399E-01   .399E-01
+ cMean    [M/L3] 3    .998E-02   .998E-02
+ ConcVol  [M/L2] 4    .175E-01   .175E-01
+ cMean    [M/L3] 4    .438E-02   .438E-02
+ ConcVol  [M/L2] 5    .441E-02   .441E-02
+ cMean    [M/L3] 5    .110E-02   .110E-02
+ ConcVol  [M/L2] 6    .103E-03   .103E-03
+ cMean    [M/L3] 6    .256E-04   .256E-04
+ ConcVol  [M/L2] 7    .254E-03   .254E-03
+ cMean    [M/L3] 7    .634E-04   .634E-04
+ ConcVol  [M/L2] 8    .121E-02   .121E-02
+ cMean    [M/L3] 8    .302E-03   .302E-03
+ ConcVol  [M/L2] 9    .477E-04   .477E-04
+ cMean    [M/L3] 9    .119E-04   .119E-04
+ ConcVol  [M/L2]10    .462E-03   .462E-03
+ cMean    [M/L3]10    .116E-03   .116E-03
+ ConcVol  [M/L2]11    .188E-03   .188E-03
+ cMean    [M/L3]11    .471E-04   .471E-04
+ ConcVol  [M/L2]12    .149E-01   .149E-01
+ cMean    [M/L3]12    .371E-02   .371E-02
+ CncBalT  [M]    1   -.277E-04
+ CncBalR  [%]    1        .063
+ CncBalT  [M]    2   -.973E-04
+ CncBalR  [%]    2       1.259
+ CncBalT  [M]    3    .498E-03
+ CncBalR  [%]    3        .191
+ CncBalT  [M]    4    .564E-03
+ CncBalR  [%]    4        .562
+ CncBalT  [M]    5   -.695E-04
+ CncBalR  [%]    5        .192
+ CncBalT  [M]    6   -.363E-03
+ CncBalR  [%]    6       1.262
+ CncBalT  [M]    7   -.200E-03
+ CncBalR  [%]    7       1.243
+ CncBalT  [M]    8   -.727E-04
+ CncBalR  [%]    8        .674
+ CncBalT  [M]    9   -.220E-04
+ CncBalR  [%]    9        .821
+ CncBalT  [M]   10   -.689E-04
+ CncBalR  [%]   10       1.080
+ CncBalT  [M]   11   -.326E-04
+ CncBalR  [%]   11       1.116
+ CncBalT  [M]   12   -.371E-03
+ CncBalR  [%]   12        .265
+-----------------------------------------------------

@@ -1,0 +1,69 @@
+Pcp_File_Version=4
+*** BLOCK A: BASIC INFORMATION *****************************************
+Heading
+Transient nonequilibrium physical transport
+LUnit  TUnit  MUnit  (indicated units are obligatory for all input data)
+cm
+days
+mmol
+lWat   lChem lTemp  lSink lRoot lShort lWDep lScreen lVariabBC lEquil lInverse
+ t     t     f      f     f     t      f     t       t         f         f
+lSnow  lHP1   lMeteo  lVapor  lDummy  lFluxes lDummy  lDummy  lDummy  lDummy
+ f       t       f       f       f       t       f       f       f       f
+NMat    NLay  CosAlpha
+  1       1       1
+*** BLOCK B: WATER FLOW INFORMATION ************************************
+MaxIt   TolTh   TolH       (maximum number of iterations and tolerances)
+  10    0.001      1
+TopInf WLayer KodTop InitCond
+ t     f      -1       f
+BotInf qGWLF FreeD SeepF KodBot DrainF  hSeep
+ f     f     t     f     -1      f      0
+    hTab1   hTabN
+    1e-006   10000
+    Model   Hysteresis
+      0          0
+   thr     ths    Alfa      n         Ks       l
+  0.078    0.43   0.036    1.56      24.96     0.5 
+*** BLOCK C: TIME INFORMATION ******************************************
+        dt       dtMin       dtMax     DMul    DMul2  ItMin ItMax  MPL
+      0.001      1e-005           5     1.3     0.7     3     7     6
+      tInit        tMax
+          0         300
+  lPrintD  nPrintSteps tPrintInterval lEnter
+     t           1           0.5       t
+TPrint(1),TPrint(2),...,TPrint(MPL)
+         10          30          50         100         200         300 
+*** BLOCK F: SOLUTE TRANSPORT INFORMATION *****************************************************
+ Epsi  lUpW  lArtD lTDep    cTolA    cTolR   MaxItC    PeCr  No.Solutes  lTort   iBacter   lFiltr  nChPar
+  0.5     f     f     f         0         0     1        2        3       t       0        f       16
+iNonEqul lWatDep lDualNEq lInitM  lInitEq lTort lDummy  lDummy  lDummy  lDummy  lDummy
+   5       f       f       f       f       f       t       f       f       f       f
+     Bulk.d.     DisperL.      Frac      Mobile WC (1..NMat)
+        1.5           8           1        0.05 
+         DifW       DifG                n-th solute
+          0           0 
+         Ks          Nu        Beta       Henry       SnkL1       SnkS1       SnkG1       SnkL1'      SnkS1'      SnkG1'      SnkL0       SnkS0       SnkG0        Alfa
+          0           0           1           0           0           0           0           0           0           0           0           0           0      0.0125 
+         DifW       DifG                n-th solute
+          0           0 
+         Ks          Nu        Beta       Henry       SnkL1       SnkS1       SnkG1       SnkL1'      SnkS1'      SnkG1'      SnkL0       SnkS0       SnkG0        Alfa
+          0           0           1           0           0           0           0           0           0           0           0           0           0      0.0125 
+         DifW       DifG                n-th solute
+          0           0 
+         Ks          Nu        Beta       Henry       SnkL1       SnkS1       SnkG1       SnkL1'      SnkS1'      SnkG1'      SnkL0       SnkS0       SnkG0        Alfa
+          0           0           1           0           0           0           0           0           0           0           0           0           0      0.0125 
+      kTopSolute  SolTop    kBotSolute  SolBot
+         -1           0           0           0           0           0           0           0 
+      tPulse
+        300
+*** HP1-Related Input **************************************************
+  t  t  t  f     1     1
+    1
+  t
+  f  f  t  t  f  f  f  f
+TRANSCL.hse
+    0
+0 1 500
+  t
+*** END OF INPUT FILE 'SELECTOR.IN' ************************************

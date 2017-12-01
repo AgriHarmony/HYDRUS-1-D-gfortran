@@ -1,0 +1,242 @@
+#HP1BEGIN GENERAL ###############################################
+#This block will be overwritten by HP1
+# DATABASE C:\Program Files\PC-Progress\HYDRUS-1D 4.xx\HP1 Databases
+# Project Folder : C:\ussl\HYDRUS-1D v4\Examples\HP1\MCATEXCH\
+TITLE : Heavy metal transport in a medium with a pH-dependent cation exchange complex
+# Number of soil layers : 5
+# 1-13  #soil material 1
+# 14-23  #soil material 2
+# 24-28  #soil material 3
+# 29-33  #soil material 4
+# 34-51  #soil material 5
+#HP1END #########################################################
+
+#HP1BEGIN DATABASE ##############################################
+#add new thermodynamic data - This block will not be overwritten by HP1
+
+SOLUTION_MASTER_SPECIES
+
+SOLUTION_SPECIES
+
+PHASES
+
+EXCHANGE_MASTER_SPECIES
+
+EXCHANGE_SPECIES
+
+SURFACE_MASTER_SPECIES
+
+SURFACE_SPECIES
+
+RATES
+
+
+
+#HP1END #########################################################
+
+SELECTED_OUTPUT
+ -file MCATEXCH.hse
+ -reset false 
+ -solution true 
+ -distance true 
+ -time true 
+ -pH true 
+ -pe true 
+
+#HP1BEGIN OUTPUT ################################################
+#Define output
+#This block will not be overwritten by HP1
+
+
+User_punch
+-headings Cd@µmol_kg_water_-1 1_-_Hsite_div_total_CEC Cd-site_div_total_CEC 2timesCD-site
+-start
+ 10 punch tot("Cd") * 1E6
+ 21 Hsite = mol("HXa") + mol("HXb") + mol("HXc") + mol("HXd") + mol("HXe") + mol("HXf")
+ 22 Nasite = mol("NaXa") + mol("NaXb") + mol("NaXc") + mol("NaXd") + mol("NaXe") + mol("NaXf")
+ 23 Ksite = mol("KXa") + mol("KXb") + mol("KXc") + mol("KXd") + mol("KXe") + mol("KXf")
+ 24 Casite = mol("CaXa2") + mol("CaXb2") + mol("CaXc2") + mol("CaXd2") + mol("CaXe2") + mol("CaXf2")
+ 25 Mgsite = mol("MgXa2") + mol("MgXb2") + mol("MgXc2") + mol("MgXd2") + mol("MgXe2") + mol("MgXf2")
+ 26 Cdsite = mol("CdXa2") + mol("CdXb2") + mol("CdXc2") + mol("CdXd2") + mol("CdXe2") + mol("CdXf2")
+ 27 Pbsite = mol("PbXa2") + mol("PbXb2") + mol("PbXc2") + mol("PbXd2") + mol("PbXe2") + mol("PbXf2")
+ 28 Znsite = mol("ZnXa2") + mol("ZnXb2") + mol("ZnXc2") + mol("ZnXd2") + mol("ZnXe2") + mol("ZnXf2")
+ 29 totsite=Hsite+Nasite+Ksite+Casite+Mgsite+Cdsite+Pbsite+Znsite
+ 30 punch (1-Hsite)/totsite
+ 35 punch Cdsite/totsite 2*Cdsite/totsite
+
+-end
+
+
+
+#HP1END #########################################################
+
+#HP1BEGIN SOLUTIONDEFINITION ####################################
+#This block will not be overwritten by HP1
+#Definition of the solution compositions - initial and boundary
+
+solution 1001 initial condition 0-28
+temperature 25
+-units umoles/kgw
+pH 8.5 
+K               120
+Na             401.9 charge
+Ca             98
+Mg             5 
+Cd 0.8
+Pb 2.5
+Zn 50
+Br 780 
+
+solution 1002 initial condition 28-100
+-units umoles/kgw
+pH 8.5
+K               120
+Na             450 charge
+Ca             98
+Mg             5
+Br 780 
+
+solution 3001 boundary solution
+-units umoles/kgw
+pH 3.5
+Na 127 charge
+K 120
+Ca 98
+Mg 5
+Br 780
+
+
+
+
+
+#HP1END #########################################################
+
+#HP1BEGIN INITIAL ###############################################
+#Definition of the initial conditions
+#This block will be overwritten by HP1
+END
+MIX 1 ;	1001	0.336585	; SAVE SOLUTION	1	 ; END
+MIX 2 ;	1001	0.334585	; SAVE SOLUTION	2	 ; END
+MIX 3 ;	1001	0.334585	; SAVE SOLUTION	3	 ; END
+MIX 4 ;	1001	0.334585	; SAVE SOLUTION	4	 ; END
+MIX 5 ;	1001	0.334585	; SAVE SOLUTION	5	 ; END
+MIX 6 ;	1001	0.334585	; SAVE SOLUTION	6	 ; END
+MIX 7 ;	1001	0.332604	; SAVE SOLUTION	7	 ; END
+MIX 8 ;	1001	0.332604	; SAVE SOLUTION	8	 ; END
+MIX 9 ;	1001	0.332604	; SAVE SOLUTION	9	 ; END
+MIX 10 ;	1001	0.330644	; SAVE SOLUTION	10	 ; END
+MIX 11 ;	1001	0.330644	; SAVE SOLUTION	11	 ; END
+MIX 12 ;	1001	0.330644	; SAVE SOLUTION	12	 ; END
+MIX 13 ;	1001	0.328703	; SAVE SOLUTION	13	 ; END
+MIX 14 ;	1001	0.236479	; SAVE SOLUTION	14	 ; END
+MIX 15 ;	1001	0.240040	; SAVE SOLUTION	15	 ; END
+MIX 16 ;	1001	0.243649	; SAVE SOLUTION	16	 ; END
+MIX 17 ;	1001	0.243649	; SAVE SOLUTION	17	 ; END
+MIX 18 ;	1001	0.247305	; SAVE SOLUTION	18	 ; END
+MIX 19 ;	1001	0.251006	; SAVE SOLUTION	19	 ; END
+MIX 20 ;	1001	0.254749	; SAVE SOLUTION	20	 ; END
+MIX 21 ;	1001	0.258534	; SAVE SOLUTION	21	 ; END
+MIX 22 ;	1001	0.258534	; SAVE SOLUTION	22	 ; END
+MIX 23 ;	1001	0.262357	; SAVE SOLUTION	23	 ; END
+MIX 24 ;	1001	0.373632	; SAVE SOLUTION	24	 ; END
+MIX 25 ;	1001	0.369634	; SAVE SOLUTION	25	 ; END
+MIX 26 ;	1001	0.365737	; SAVE SOLUTION	26	 ; END
+MIX 27 ;	1001	0.360693	; SAVE SOLUTION	27	 ; END
+MIX 28 ;	1001	0.355819	; SAVE SOLUTION	28	 ; END
+MIX 29 ;	1002	0.203482	; SAVE SOLUTION	29	 ; END
+MIX 30 ;	1002	0.203482	; SAVE SOLUTION	30	 ; END
+MIX 31 ;	1002	0.203482	; SAVE SOLUTION	31	 ; END
+MIX 32 ;	1002	0.201871	; SAVE SOLUTION	32	 ; END
+MIX 33 ;	1002	0.201871	; SAVE SOLUTION	33	 ; END
+MIX 34 ;	1002	0.141914	; SAVE SOLUTION	34	 ; END
+MIX 35 ;	1002	0.141914	; SAVE SOLUTION	35	 ; END
+MIX 36 ;	1002	0.141914	; SAVE SOLUTION	36	 ; END
+MIX 37 ;	1002	0.141914	; SAVE SOLUTION	37	 ; END
+MIX 38 ;	1002	0.141914	; SAVE SOLUTION	38	 ; END
+MIX 39 ;	1002	0.141914	; SAVE SOLUTION	39	 ; END
+MIX 40 ;	1002	0.141914	; SAVE SOLUTION	40	 ; END
+MIX 41 ;	1002	0.141914	; SAVE SOLUTION	41	 ; END
+MIX 42 ;	1002	0.141914	; SAVE SOLUTION	42	 ; END
+MIX 43 ;	1002	0.141914	; SAVE SOLUTION	43	 ; END
+MIX 44 ;	1002	0.141914	; SAVE SOLUTION	44	 ; END
+MIX 45 ;	1002	0.141914	; SAVE SOLUTION	45	 ; END
+MIX 46 ;	1002	0.141914	; SAVE SOLUTION	46	 ; END
+MIX 47 ;	1002	0.141914	; SAVE SOLUTION	47	 ; END
+MIX 48 ;	1002	0.141914	; SAVE SOLUTION	48	 ; END
+MIX 49 ;	1002	0.141914	; SAVE SOLUTION	49	 ; END
+MIX 50 ;	1002	0.141914	; SAVE SOLUTION	50	 ; END
+MIX 51 ;	1002	0.141914	; SAVE SOLUTION	51	 ; END
+
+#HP1END #########################################################
+
+#HP1BEGIN GEOCHEMICAL ###########################################
+#Define geochemical model
+#This block will not be overwritten by HP1
+
+
+
+EXCHANGE 1-13 @Layer 1@
+ Xa 0.003
+ Xb 0.003
+ Xc 0.003
+ Xd 0.003
+ Xe 0.003
+ Xf 0.003
+ -equilibrate with solution 1001
+
+EXCHANGE 14-23 @Layer 2@
+ Xa 0.0019
+ Xb 0.0019
+ Xc 0.0019
+ Xd 0.0019
+ Xe 0.0019
+ Xf 0.0019
+ -equilibrate with solution 1001
+
+EXCHANGE 24-28 @Layer 3@
+ Xa 0.0111
+ Xb 0.0111
+ Xc 0.0111
+ Xd 0.0111
+ Xe 0.0111
+ Xf 0.0111
+ -equilibrate with solution 1001
+
+EXCHANGE 29-33 @Layer 4@
+ Xa 0.009
+ Xb 0.009
+ Xc 0.009
+ Xd 0.009
+ Xe 0.009
+ Xf 0.009
+ -equilibrate with solution 1002
+
+EXCHANGE 34-51 @Layer 5@
+ Xa 0.0019
+ Xb 0.0019
+ Xc 0.0019
+ Xd 0.0019
+ Xe 0.0019
+ Xf 0.0019
+ -equilibrate with solution 1002
+
+
+
+
+#HP1END #########################################################
+
+#HP1BEGIN TRANSPORT  ############################################
+#Definition of transport
+#This block will be overwritten by HP1
+
+PRINT
+ -reset false
+ -echo_input true
+ -warnings 500
+
+TRANSPORT
+ -cells 51
+ -gnuplot true
+
+#HP1END #########################################################
+

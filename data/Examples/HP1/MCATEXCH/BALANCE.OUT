@@ -1,0 +1,294 @@
+ ******* Program HYDRUS
+ ******* Heavy metal transport in a medium with a pH-dependent cation exchange c
+ o
+ Date:  30.10.    Time:   9:25:13
+ Units: L = m    , T = years, M = mmol 
+
+-----------------------------------------------------
+ Time       [T]         .0000
+-----------------------------------------------------
+ Sub-region num.                   1
+-----------------------------------------------------
+ Area     [L]         .500E+00   .500E+00
+ W-volume [L]         .120E+00   .120E+00
+ In-flow  [L/T]       .000E+00   .000E+00
+ h Mean   [L]        -.789E+00  -.789E+00
+ ConcVol  [M/L2] 1    .503E-05   .503E-05
+ cMean    [M/L3] 1    .333E-04   .333E-04
+ ConcVol  [M/L2] 2    .503E-05   .503E-05
+ cMean    [M/L3] 2    .333E-04   .333E-04
+ ConcVol  [M/L2] 3    .507E-04   .507E-04
+ cMean    [M/L3] 3    .429E-03   .429E-03
+ ConcVol  [M/L2] 4    .145E-04   .145E-04
+ cMean    [M/L3] 4    .120E-03   .120E-03
+ ConcVol  [M/L2] 5    .118E-04   .118E-04
+ cMean    [M/L3] 5    .980E-04   .980E-04
+ ConcVol  [M/L2] 6    .602E-06   .602E-06
+ cMean    [M/L3] 6    .500E-05   .500E-05
+ ConcVol  [M/L2] 7    .000E+00   .000E+00
+ cMean    [M/L3] 7    .000E+00   .000E+00
+ ConcVol  [M/L2] 8    .940E-04   .940E-04
+ cMean    [M/L3] 8    .780E-03   .780E-03
+ ConcVol  [M/L2] 9    .679E-07   .679E-07
+ cMean    [M/L3] 9    .440E-06   .440E-06
+ ConcVol  [M/L2]10    .212E-06   .212E-06
+ cMean    [M/L3]10    .138E-05   .138E-05
+ ConcVol  [M/L2]11    .425E-05   .425E-05
+ cMean    [M/L3]11    .275E-04   .275E-04
+ ConcVol  [M/L2]12    .000E+00   .000E+00
+ cMean    [M/L3]12    .000E+00   .000E+00
+ Top Flux [L/T]      -.309E+02
+ Bot Flux [L/T]      -.183E+02
+-----------------------------------------------------
+
+-----------------------------------------------------
+ Time       [T]         .3000
+-----------------------------------------------------
+ Sub-region num.                   1
+-----------------------------------------------------
+ Area     [L]         .500E+00   .500E+00
+ W-volume [L]         .121E+00   .121E+00
+ In-flow  [L/T]      -.267E-11  -.267E-11
+ h Mean   [L]        -.788E+00  -.788E+00
+ ConcVol  [M/L2] 1    .173E-04   .173E-04
+ cMean    [M/L3] 1    .111E-03   .111E-03
+ ConcVol  [M/L2] 2    .469E-11   .469E-11
+ cMean    [M/L3] 2    .407E-10   .407E-10
+ ConcVol  [M/L2] 3    .154E-04   .154E-04
+ cMean    [M/L3] 3    .128E-03   .128E-03
+ ConcVol  [M/L2] 4    .146E-04   .146E-04
+ cMean    [M/L3] 4    .121E-03   .121E-03
+ ConcVol  [M/L2] 5    .209E-04   .209E-04
+ cMean    [M/L3] 5    .186E-03   .186E-03
+ ConcVol  [M/L2] 6    .908E-06   .908E-06
+ cMean    [M/L3] 6    .808E-05   .808E-05
+ ConcVol  [M/L2] 7    .000E+00   .000E+00
+ cMean    [M/L3] 7    .000E+00   .000E+00
+ ConcVol  [M/L2] 8    .940E-04   .940E-04
+ cMean    [M/L3] 8    .780E-03   .780E-03
+ ConcVol  [M/L2] 9    .665E-07   .665E-07
+ cMean    [M/L3] 9    .677E-06   .677E-06
+ ConcVol  [M/L2]10    .275E-07   .275E-07
+ cMean    [M/L3]10    .288E-06   .288E-06
+ ConcVol  [M/L2]11    .145E-05   .145E-05
+ cMean    [M/L3]11    .151E-04   .151E-04
+ ConcVol  [M/L2]12    .000E+00   .000E+00
+ cMean    [M/L3]12    .000E+00   .000E+00
+ Top Flux [L/T]      -.183E+02
+ Bot Flux [L/T]      -.183E+02
+ WatBalT  [L]         .293E-13
+ WatBalR  [%]             .000
+ CncBalT  [M]    1    .174E-06
+ CncBalR  [%]    1        .009
+ CncBalT  [M]    2   -.238E-08
+ CncBalR  [%]    2        .015
+ CncBalT  [M]    3   -.388E-06
+ CncBalR  [%]    3        .027
+ CncBalT  [M]    4   -.857E-07
+ CncBalR  [%]    4        .006
+ CncBalT  [M]    5   -.861E-06
+ CncBalR  [%]    5        .048
+ CncBalT  [M]    6   -.805E-07
+ CncBalR  [%]    6        .091
+ CncBalT  [M]    7    .000E+00
+ CncBalR  [%]    7        .000
+ CncBalT  [M]    8    .132E-07
+ CncBalR  [%]    8        .000
+ CncBalT  [M]    9    .639E-07
+ CncBalR  [%]    9        .408
+ CncBalT  [M]   10    .130E-07
+ CncBalR  [%]   10        .083
+ CncBalT  [M]   11    .102E-05
+ CncBalR  [%]   11        .639
+ CncBalT  [M]   12    .000E+00
+ CncBalR  [%]   12        .000
+-----------------------------------------------------
+
+-----------------------------------------------------
+ Time       [T]         .5000
+-----------------------------------------------------
+ Sub-region num.                   1
+-----------------------------------------------------
+ Area     [L]         .500E+00   .500E+00
+ W-volume [L]         .121E+00   .121E+00
+ In-flow  [L/T]       .648E-12   .648E-12
+ h Mean   [L]        -.788E+00  -.788E+00
+ ConcVol  [M/L2] 1    .220E-04   .220E-04
+ cMean    [M/L3] 1    .143E-03   .143E-03
+ ConcVol  [M/L2] 2    .431E-11   .431E-11
+ cMean    [M/L3] 2    .373E-10   .373E-10
+ ConcVol  [M/L2] 3    .154E-04   .154E-04
+ cMean    [M/L3] 3    .128E-03   .128E-03
+ ConcVol  [M/L2] 4    .145E-04   .145E-04
+ cMean    [M/L3] 4    .121E-03   .121E-03
+ ConcVol  [M/L2] 5    .195E-04   .195E-04
+ cMean    [M/L3] 5    .179E-03   .179E-03
+ ConcVol  [M/L2] 6    .801E-06   .801E-06
+ cMean    [M/L3] 6    .712E-05   .712E-05
+ ConcVol  [M/L2] 7    .000E+00   .000E+00
+ cMean    [M/L3] 7    .000E+00   .000E+00
+ ConcVol  [M/L2] 8    .940E-04   .940E-04
+ cMean    [M/L3] 8    .780E-03   .780E-03
+ ConcVol  [M/L2] 9    .400E-07   .400E-07
+ cMean    [M/L3] 9    .438E-06   .438E-06
+ ConcVol  [M/L2]10    .942E-08   .942E-08
+ cMean    [M/L3]10    .974E-07   .974E-07
+ ConcVol  [M/L2]11    .677E-06   .677E-06
+ cMean    [M/L3]11    .736E-05   .736E-05
+ ConcVol  [M/L2]12    .000E+00   .000E+00
+ cMean    [M/L3]12    .000E+00   .000E+00
+ Top Flux [L/T]      -.183E+02
+ Bot Flux [L/T]      -.182E+02
+ WatBalT  [L]         .585E-13
+ WatBalR  [%]             .000
+ CncBalT  [M]    1    .818E-06
+ CncBalR  [%]    1        .026
+ CncBalT  [M]    2   -.238E-08
+ CncBalR  [%]    2        .014
+ CncBalT  [M]    3   -.389E-06
+ CncBalR  [%]    3        .016
+ CncBalT  [M]    4   -.913E-07
+ CncBalR  [%]    4        .004
+ CncBalT  [M]    5   -.731E-06
+ CncBalR  [%]    5        .024
+ CncBalT  [M]    6   -.138E-06
+ CncBalR  [%]    6        .097
+ CncBalT  [M]    7    .000E+00
+ CncBalR  [%]    7        .000
+ CncBalT  [M]    8    .132E-07
+ CncBalR  [%]    8        .000
+ CncBalT  [M]    9    .488E-07
+ CncBalR  [%]    9        .278
+ CncBalT  [M]   10    .566E-08
+ CncBalR  [%]   10        .032
+ CncBalT  [M]   11    .650E-06
+ CncBalR  [%]   11        .277
+ CncBalT  [M]   12    .000E+00
+ CncBalR  [%]   12        .000
+-----------------------------------------------------
+
+-----------------------------------------------------
+ Time       [T]         .7000
+-----------------------------------------------------
+ Sub-region num.                   1
+-----------------------------------------------------
+ Area     [L]         .500E+00   .500E+00
+ W-volume [L]         .121E+00   .121E+00
+ In-flow  [L/T]      -.429E-11  -.429E-11
+ h Mean   [L]        -.788E+00  -.788E+00
+ ConcVol  [M/L2] 1    .263E-04   .263E-04
+ cMean    [M/L3] 1    .175E-03   .175E-03
+ ConcVol  [M/L2] 2    .396E-11   .396E-11
+ cMean    [M/L3] 2    .329E-10   .329E-10
+ ConcVol  [M/L2] 3    .154E-04   .154E-04
+ cMean    [M/L3] 3    .128E-03   .128E-03
+ ConcVol  [M/L2] 4    .145E-04   .145E-04
+ cMean    [M/L3] 4    .121E-03   .121E-03
+ ConcVol  [M/L2] 5    .179E-04   .179E-04
+ cMean    [M/L3] 5    .169E-03   .169E-03
+ ConcVol  [M/L2] 6    .728E-06   .728E-06
+ cMean    [M/L3] 6    .647E-05   .647E-05
+ ConcVol  [M/L2] 7    .000E+00   .000E+00
+ cMean    [M/L3] 7    .000E+00   .000E+00
+ ConcVol  [M/L2] 8    .940E-04   .940E-04
+ cMean    [M/L3] 8    .780E-03   .780E-03
+ ConcVol  [M/L2] 9    .173E-07   .173E-07
+ cMean    [M/L3] 9    .203E-06   .203E-06
+ ConcVol  [M/L2]10    .492E-08   .492E-08
+ cMean    [M/L3]10    .554E-07   .554E-07
+ ConcVol  [M/L2]11    .268E-06   .268E-06
+ cMean    [M/L3]11    .313E-05   .313E-05
+ ConcVol  [M/L2]12    .000E+00   .000E+00
+ cMean    [M/L3]12    .000E+00   .000E+00
+ Top Flux [L/T]      -.182E+02
+ Bot Flux [L/T]      -.183E+02
+ WatBalT  [L]         .913E-13
+ WatBalR  [%]             .000
+ CncBalT  [M]    1    .120E-05
+ CncBalR  [%]    1        .027
+ CncBalT  [M]    2   -.238E-08
+ CncBalR  [%]    2        .011
+ CncBalT  [M]    3   -.390E-06
+ CncBalR  [%]    3        .012
+ CncBalT  [M]    4   -.945E-07
+ CncBalR  [%]    4        .003
+ CncBalT  [M]    5   -.575E-06
+ CncBalR  [%]    5        .013
+ CncBalT  [M]    6   -.169E-06
+ CncBalR  [%]    6        .088
+ CncBalT  [M]    7    .000E+00
+ CncBalR  [%]    7        .000
+ CncBalT  [M]    8    .132E-07
+ CncBalR  [%]    8        .000
+ CncBalT  [M]    9    .272E-07
+ CncBalR  [%]    9        .126
+ CncBalT  [M]   10    .420E-08
+ CncBalR  [%]   10        .020
+ CncBalT  [M]   11    .357E-06
+ CncBalR  [%]   11        .130
+ CncBalT  [M]   12    .000E+00
+ CncBalR  [%]   12        .000
+-----------------------------------------------------
+
+-----------------------------------------------------
+ Time       [T]        1.0000
+-----------------------------------------------------
+ Sub-region num.                   1
+-----------------------------------------------------
+ Area     [L]         .500E+00   .500E+00
+ W-volume [L]         .121E+00   .121E+00
+ In-flow  [L/T]       .181E-11   .181E-11
+ h Mean   [L]        -.788E+00  -.788E+00
+ ConcVol  [M/L2] 1    .389E-04   .389E-04
+ cMean    [M/L3] 1    .322E-03   .322E-03
+ ConcVol  [M/L2] 2    .396E-11   .396E-11
+ cMean    [M/L3] 2    .329E-10   .329E-10
+ ConcVol  [M/L2] 3    .154E-04   .154E-04
+ cMean    [M/L3] 3    .128E-03   .128E-03
+ ConcVol  [M/L2] 4    .145E-04   .145E-04
+ cMean    [M/L3] 4    .120E-03   .120E-03
+ ConcVol  [M/L2] 5    .120E-04   .120E-04
+ cMean    [M/L3] 5    .100E-03   .100E-03
+ ConcVol  [M/L2] 6    .607E-06   .607E-06
+ cMean    [M/L3] 6    .504E-05   .504E-05
+ ConcVol  [M/L2] 7    .000E+00   .000E+00
+ cMean    [M/L3] 7    .000E+00   .000E+00
+ ConcVol  [M/L2] 8    .940E-04   .940E-04
+ cMean    [M/L3] 8    .780E-03   .780E-03
+ ConcVol  [M/L2] 9    .101E-09   .101E-09
+ cMean    [M/L3] 9    .110E-08   .110E-08
+ ConcVol  [M/L2]10    .302E-09   .302E-09
+ cMean    [M/L3]10    .331E-08   .331E-08
+ ConcVol  [M/L2]11    .154E-08   .154E-08
+ cMean    [M/L3]11    .168E-07   .168E-07
+ ConcVol  [M/L2]12    .000E+00   .000E+00
+ cMean    [M/L3]12    .000E+00   .000E+00
+ Top Flux [L/T]      -.183E+02
+ Bot Flux [L/T]      -.183E+02
+ WatBalT  [L]         .113E-12
+ WatBalR  [%]             .000
+ CncBalT  [M]    1    .273E-04
+ CncBalR  [%]    1        .398
+ CncBalT  [M]    2   -.238E-08
+ CncBalR  [%]    2        .007
+ CncBalT  [M]    3   -.413E-06
+ CncBalR  [%]    3        .009
+ CncBalT  [M]    4   -.206E-06
+ CncBalR  [%]    4        .005
+ CncBalT  [M]    5   -.129E-04
+ CncBalR  [%]    5        .220
+ CncBalT  [M]    6   -.418E-06
+ CncBalR  [%]    6        .163
+ CncBalT  [M]    7    .000E+00
+ CncBalR  [%]    7        .000
+ CncBalT  [M]    8    .132E-07
+ CncBalR  [%]    8        .000
+ CncBalT  [M]    9    .219E-10
+ CncBalR  [%]    9        .000
+ CncBalT  [M]   10    .121E-09
+ CncBalR  [%]   10        .000
+ CncBalT  [M]   11    .334E-09
+ CncBalR  [%]   11        .000
+ CncBalT  [M]   12    .000E+00
+ CncBalR  [%]   12        .000
+-----------------------------------------------------

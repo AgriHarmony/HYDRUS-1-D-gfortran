@@ -1,0 +1,10 @@
+ ******* Program HYDRUS
+ ******* Physical nonequilibrium transport of chloride (verification problem 1) 
+  
+ Date:  30.10.    Time:   9:23:40
+ Units: L = cm   , T = days , M = mmol 
+
+       Time          rTop        rRoot        vTop         vRoot        vBot       sum(rTop)   sum(rRoot)    sum(vTop)   sum(vRoot)    sum(vBot)      hTop         hRoot        hBot        RunOff    sum(RunOff)     Volume     sum(Infil)    sum(Evap) TLevel Cum(WTrans)  xDummy
+        [T]         [L/T]        [L/T]        [L/T]        [L/T]        [L/T]         [L]          [L]          [L]         [L]           [L]         [L]           [L]         [L]          [L/T]         [L]          [L]          [L]
+
+end

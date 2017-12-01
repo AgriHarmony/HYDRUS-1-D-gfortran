@@ -1,0 +1,11 @@
+ ******* Program HYDRUS
+ ******* Solute Transport with Nitrification Chain                              
+  
+ Date:   1.10.    Time:  14: 7: 8
+ Units: L = cm   , T = hours, M = -    
+
+       Time        rTop      rRoot      vTop       vRoot      vBot     sum(rTop) sum(rRoot)  sum(vTop) sum(vRoot)  sum(vBot)    hTop       hRoot      hBot      t-level
+        [T]       [L/T]      [L/T]      [L/T]      [L/T]      [L/T]       [L]        [L]        [L]        [L]        [L]        [L]        [L]        [L]
+
+       1.00000   .000E+00   .000E+00  -.100E+01   .000E+00  -.100E+01   .000E+00   .000E+00  -.100E+01   .000E+00  -.100E+01   .000E+00   .000E+00   .000E+00       1
+end

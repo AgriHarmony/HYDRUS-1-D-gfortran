@@ -1,0 +1,46 @@
+*** BLOCK A: BASIC INFORMATION *****************************************
+Heading
+Skaggs' column Test 1
+LUnit  TUnit  MUnit  (indicated units are obligatory for all input data)
+cm
+sec
+-
+lWat   lChem lTemp  lSink lRoot lShort lWDep lScreen lVariabBC lEquil lInverse
+ t     t     f      f     f     f      f     t       f         t         f
+NMat    NLay  CosAlpha
+  1       1       1
+*** BLOCK B: WATER FLOW INFORMATION ************************************
+MaxIt   TolTh   TolH       (maximum number of iterations and tolerances)
+  20   0.0001    0.1
+TopInf WLayer KodTop InitCond
+ f     f       1       f
+BotInf qGWLF FreeD SeepF KodBot DrainF
+ f     f     f     f      1      f
+    hTab1   hTabN
+    1e-006  100000
+    Model   Hysteresis
+      1          0
+   thr     ths    Alfa      n         Ks       l      thm     tha        thk      Kk
+   0.02    0.35   0.041   1.964   0.000722     0.5    0.35    0.02     0.2875 0.000695 
+*** BLOCK C: TIME INFORMATION ******************************************
+        dt       dtMin       dtMax     DMul    DMul2  ItMin ItMax  MPL
+       0.05        0.01         600     1.1     0.8     3     7     7
+      tInit        tMax
+          0        9000
+TPrint(1),TPrint(2),...,TPrint(MPL)
+         90         900        1800        3600        5400        7200 
+       9000 
+*** BLOCK F: SOLUTE TRANSPORT INFORMATION *****************************************************
+ Epsi  lUpW  lArtD lTDep    cTolA    cTolR   MaxItC    PeCr  No.Solutes  lTort
+  0.5     f     f     f         0         0     1        2        1       t
+     Bulk.d.     DisperL.      Frac      Mobile WC (1..NMat)
+        1.4           2           1           0 
+         DifW       DifG                n-th solute
+     0.0005           0 
+         Ks          Nu        Beta       Henry       SnkL1       SnkS1       SnkG1       SnkL1'      SnkS1'      SnkG1'      SnkL0       SnkS0       SnkG0        Alfa
+        0.1           0           1           0      1e-006      5e-007           0           0           0           0           0           0           0           0 
+      kTopSolute  SolTop    kBotSolute  SolBot
+         -1           1           0           0 
+      tPulse
+       5400
+*** END OF INPUT FILE 'SELECTOR.IN' ************************************

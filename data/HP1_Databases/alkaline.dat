@@ -1,0 +1,345 @@
+SOLUTION_MASTER_SPECIES
+#
+#element	species	alk	gfw_formula	element_gfw
+#
+H		H+	-1.0	H		1.008
+H(0)		H2	0.0	H
+H(1)		H+	-1.0	0.0
+E		e-	0.0	0.0		0.0
+O		H2O	0.0	O		16.0
+O(0)		O2	0.0	O
+O(-2)		H2O	0.0	0.0
+Na		Na+	0.0	Na		22.9898
+Cl		Cl-	0.0	Cl		35.453
+C		HCO3-	2.0	HCO3		12.0111
+#Alkalinity	CO3-2	1.0	(CO3)0.5	50.05
+S		SO4-2	0.0	SO4		32.064
+K               K+      0.0     K    39.0983
+Ca              Ca+2   0.0      Ca   40.078
+Mg              Mg+2    0.0     Mg   24.305
+Al		Al+3	0.0	Al		26.9815
+Si		SiO2	0.0	SiO2		28.0843
+
+SOLUTION_SPECIES
+
+
+H+ = H+
+	log_k	0.0
+	-gamma	9.0	0.0410
+
+e- = e-
+	log_k	0.0
+
+H2O = H2O
+	log_k	0.0
+        -gamma 3.0 0.0
+Na+ = Na+
+	log_k	0.0
+	-gamma	4.0	0.0410
+
+Mg+2 = Mg+2
+	log_k	0.0
+	-gamma	8.0	0.0410
+
+K+ = K+
+	log_k	0.0
+	-gamma	3.0	0.0410
+
+Ca+2 = Ca+2
+	log_k	0.0
+	-gamma	6.0	0.0410
+
+
+Cl- = Cl-
+	log_k	0.0
+	-gamma	3.0	0.0410
+
+HCO3- = HCO3-
+	log_k	0.0
+	-gamma	4.0	0.0410
+
+
+SO4-2 = SO4-2
+	log_k	0.0
+	-gamma	4.0	0.0410
+
+
+SiO2 = SiO2
+ log_k 0.0
+ -gamma 3.0 0.0000
+
+Al+3 = Al+3
+ log_k 0.0
+ -gamma 9.0 0.0410
+
+H2O = OH- + H+
+ log_k -14.00
+ -gamma 3.5 0.0410
+
+2 H2O = O2 + 4 H+ + 4 e-
+	log_k	-86.08
+
+2H+ + 2e- = H2
+ log_k -3.15
+
+
+H+ + HCO3- = CO2 + H2O
+ log_k 6.3447
+ -gamma 3.0 0.0000
+
+HCO3- = CO3-2 + H+
+ log_k -10.3288
+ -gamma 4.5 0.0410
+
+Ca+2 + H2O = CaOH+ + H+
+ log_k -12.78
+ -gamma 4.0 0.0410
+
+Mg+2 + H2O = MgOH+ + H+
+ log_k -11.44
+ -gamma 4.0 0.0410
+
+Na+ + H2O = NaOH + H+
+ log_k -14.18
+ -gamma 4.0 0.0000
+
+K+ + H2O = KOH + H+
+ log_k -14.46
+ -gamma 4.0 0.0000
+
+SO4-2 + 2H+ = H2SO4
+ log_k -1.0209
+ -gamma 3.0 0.0000
+
+SiO2 + 2H2O = H2SiO4-2 + 2H+
+ log_k -22.960
+ -gamma 4.0 0.0410
+
+SiO2 + H2O = HSiO3- + H+
+ log_k -9.9525
+ -gamma 4.0 0.0410
+
+Al+3 + 2H2O = Al(OH)2+ + 2 H+
+ log_k -10.5945
+ -gamma 4.0 0.0410
+
+Al+3 + 2 SO4-2 = Al(SO4)2-
+ log_k 4.9
+ -gamma 4.0 0.0410
+
+Al+3 + 2H2O = AlO2- + 4H+
+ log_k -22.8833
+ -gamma 4.0 0.0410
+
+Al+3 + H2O = AlOH+2 + H+
+ log_k -4.9571
+ -gamma 4.5 0.0410
+
+Al+3 + SO4-2 = AlSO4+ 
+ log_k 3.01
+ -gamma 4.0 0.0410
+
+
+Al+3 + Na+ +2H2O = NaAlO2 + 4H+
+ log_k -23.6266
+ -gamma 3.0 0.0000
+
+Ca+2 + Cl- = CaCl+
+ log_k -0.6956 
+ -gamma 3.0 0.0410
+
+Ca+2 + 2Cl- = CaCl2
+ log_k -0.6436
+ -gamma 3.0 0.0000
+
+Ca+2 + SO4-2 = CaSO4
+ log_k 2.111
+ -gamma 3.0 0.0000
+
+Ca+2 + HCO3- = CaCO3 + H+
+ log_k -7.0017
+ -gamma 3.0 0.0000
+
+Ca+2 + HCO3- = CaHCO3+
+ log_k 1.0467
+ -gamma 4.0 0.0410
+
+Na+ + HCO3- = NaCO3- + H+
+ log_k -9.8144
+ -gamma 4.0 0.0410
+
+Na+ + HCO3- = NaHCO3
+ log_k 0.1541
+ -gamma 3.0 0.0000
+
+Na+ + SiO2 + H2O = NaHSiO3 + H+
+ log_k -8.3040
+ -gamma 3.0 0.0000
+
+Na+ + Cl- = NaCl
+ log_k -0.777
+ -gamma 3.0 0.0000
+
+Na+ + SO4-2 = NaSO4-
+ log_k 0.82
+ -gamma 4.0 0.0410
+
+K+ + SO4-2 = KSO4-
+ log_k 0.8796
+ -gamma 4.0 0.0410
+
+K+ + Cl- = KCl
+ log_k -1.4946
+ -gamma 3.0 0.0000
+
+K+ + H+ + SO4-2 = KHSO4
+ log_k 0.8136
+ -gamma 3.0 0.0000
+
+SO4-2 + H+ = HSO4-
+ log_k 1.9791
+ -gamma 4.0 0.0410
+
+Al+3 + 2 H2O = HAlO2 + 3H+
+ log_k -16.4329
+ -gamma 3.0 0.0000
+
+H+ + Cl- = HCl
+ log_k 0.6700
+ -gamma 3.0 0.0000
+
+Na+ + SiO2 + H2O = NaHSiO3 + H+
+ log_k -8.3040
+ -gamma 3.0 0.0000
+
+
+Phases
+
+dolomite
+ CaMg(CO3)2 = Ca+2 + Mg+2 + 2 CO3-2
+  log_k -16.71
+
+calcite 
+ CaCO3 = Ca+2 + CO3-2
+  log_k -8.51
+
+gypsum
+ CaSO4:2H2O = Ca+2 + SO4-2 + 2H2O
+  log_k -4.48
+
+quartz
+ SiO2 = SiO2
+  log_k -3.91
+
+kaolinite
+ Al2Si2O5(OH)4 + 6H+ = 2 Al+3 + 2 SiO2 + 5H2O
+  log_k 6.36
+
+illite
+ K0.6Mg0.25Al2.3Si3.5O10(OH)2 + 8H+ = 0.6K+ + 0.25Mg+2 + 2.3 Al+3 + 3.5 SiO2 + 5H2O
+  log_k 8.51
+
+sepiolite
+ Mg4Si6O15(OH)2:6H2O + 8H+ = 4Mg+2 + 6SiO2 + 11H2O
+  log_k 29.96
+
+hydrotalcite
+ Mg4Al2O4(OH)6 + 14H+ = 4Mg+2 + 2Al+3 + 10H2O
+  log_k 75.44
+
+
+EXCHANGE_MASTER_SPECIES
+ Y Y-
+
+EXCHANGE_SPECIES
+
+ Y- = Y-
+  log_k 0
+
+ Na+ + Y- = NaY
+  log_k 0
+
+ K+ + Y- = KY
+  log_k 0.757
+
+ Ca+2 + 2 Y- = CaY2
+  log_k 0.604
+
+ Mg+2 + 2 Y- = MgY2
+  log_k 0.505
+
+Rates
+
+calcite
+ -start
+  10 Sat=SR("calcite")
+  20 rate=parm(1)*((M/M0)^(2/3))*(10^parm(2))*(1-Sat)
+  30 moles=rate*time
+  40 save moles
+ -end
+dolomite
+ -start
+  10 Sat=SR("dolomite")
+  20 rate=parm(1)*((M/M0)^(2/3))*(10^parm(2))*(1-Sat)
+  30 moles=rate*time
+  40 save moles
+ -end
+gypsum
+ -start
+  10 Sat=SR("gypsum")
+  20 rate=parm(1)*((M/M0)^(2/3))*(10^parm(2))*(1-Sat)
+  30 moles=rate*time
+  40 save moles
+ -end
+quartz
+ -start
+  10 Sat=SI("quartz")
+  15 if (Sat < 0) then goto 20
+  17 rate = 0.0
+  18 goto 30
+  20 rate=parm(1)*((M/M0)^(2/3))*(10^parm(2))*(1-10^Sat)*((ACT("OH-"))^0.3)
+  30 moles=rate*time
+  40 save moles
+ -end
+kaolinite
+ -start
+  10 Sat=SI("kaolinite")
+  15 if (Sat < 0.0) then goto 20
+  17 rate = 0.0
+  18 goto 30
+  20 rate=parm(1)*((M/M0)^(2/3))*(10^parm(2))*(1-10^Sat)*((ACT("OH-"))^0.54)
+  30 moles=rate*time
+  40 save moles
+ -end
+illite
+ -start
+  10 Sat=SI("illite")
+  15 if (Sat < 0.0) then goto 20
+  17 rate = 0.0
+ 18 goto 30
+  20 rate=parm(1)*((M/M0)^(2/3))*(10^parm(2))*(1-10^Sat)*((ACT("OH-"))^0.22)
+  30 moles=rate*time
+  40 save moles
+ -end
+sepiolite
+ -start
+  10 Sat=SR("sepiolite")
+  20 rate=parm(1)*(10^parm(2))*(1-Sat)
+  30 moles=rate*time
+  40 save moles
+ -end
+hydrotalcite
+ -start
+  10 Sat=SR("hydrotalcite")
+  20 rate=parm(1)*(10^parm(2))*(1-Sat)
+  30 moles=rate*time
+  40 save moles
+ -end
+
+
+
+
+ 
+
+
+	

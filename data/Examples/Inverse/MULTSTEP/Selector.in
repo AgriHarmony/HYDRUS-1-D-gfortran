@@ -1,0 +1,35 @@
+*** BLOCK A: BASIC INFORMATION *****************************************
+Heading
+Multistep Outflow - Data from Jan Hopmans
+LUnit  TUnit  MUnit  (indicated units are obligatory for all input data)
+cm
+hours
+mmol
+lWat   lChem lTemp  lSink lRoot lShort lWDep lScreen lVariabBC lEquil lInverse
+ t     f     f      f     f     f      f     f       t         t         t
+NMat    NLay  CosAlpha
+  1       1       1
+*** BLOCK B: WATER FLOW INFORMATION ************************************
+MaxIt   TolTh   TolH       (maximum number of iterations and tolerances)
+  20   0.0001    0.1
+TopInf WLayer KodTop InitCond
+ f     f      -1       f
+BotInf qGWLF FreeD SeepF KodBot DrainF
+ t     f     f     f      1      f
+         rTop         rBot        rRoot
+           0            0            0
+    hTab1   hTabN
+    1e-006    1000
+    Model   Hysteresis
+      0          0
+   thr     ths    Alfa      n         Ks       l
+  0.078    0.43   0.036    1.56       1.04     0.5 
+*** BLOCK C: TIME INFORMATION ******************************************
+        dt       dtMin       dtMax     DMul    DMul2  ItMin ItMax  MPL
+       0.01      0.0001         120     1.3     0.7     3     7    10
+      tInit        tMax
+          0     190.384
+TPrint(1),TPrint(2),...,TPrint(MPL)
+       0.01         0.1         0.2      19.038      38.077      57.115 
+     133.27      152.31      171.35     190.384 
+*** END OF INPUT FILE 'SELECTOR.IN' ************************************

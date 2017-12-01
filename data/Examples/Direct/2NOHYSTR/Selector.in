@@ -1,0 +1,34 @@
+*** BLOCK A: BASIC INFORMATION *****************************************
+Heading
+Transient flow infolving hysteresis
+LUnit  TUnit  MUnit  (indicated units are obligatory for all input data)
+cm
+hours
+mmol
+lWat   lChem lTemp  lSink lRoot lShort lWDep lScreen lVariabBC lEquil lInverse
+ t     f     f      f     f     f      f     t       t         t         f
+NMat    NLay  CosAlpha
+  1       1       1
+*** BLOCK B: WATER FLOW INFORMATION ************************************
+MaxIt   TolTh   TolH       (maximum number of iterations and tolerances)
+  20    0.001    0.1
+TopInf WLayer KodTop InitCond
+ t     f      -1       f
+BotInf qGWLF FreeD SeepF KodBot DrainF
+ f     f     t     f     -1      f
+    hTab1   hTabN
+    1e-006   10000
+    Model   Hysteresis
+      0          0
+   thr     ths    Alfa      n         Ks       l
+   0.05    0.45    0.02       2          5     0.5 
+*** BLOCK C: TIME INFORMATION ******************************************
+        dt       dtMin       dtMax     DMul    DMul2  ItMin ItMax  MPL
+      0.001      0.0001        0.05     1.3     0.7     3     7    16
+      tInit        tMax
+          0          24
+TPrint(1),TPrint(2),...,TPrint(MPL)
+        0.1         0.5           1           2           4           6 
+          8          10          12        12.1        12.5          13 
+         14          16          20          24 
+*** END OF INPUT FILE 'SELECTOR.IN' ************************************

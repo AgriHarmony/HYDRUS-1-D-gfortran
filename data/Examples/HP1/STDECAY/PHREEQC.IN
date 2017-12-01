@@ -1,0 +1,221 @@
+#HP1BEGIN GENERAL ###############################################
+#This block will be overwritten by HP1
+# DATABASE C:\Program Files\PC-Progress\HYDRUS-1D 4.xx\HP1 Databases
+# Project Folder : C:\ussl\HYDRUS-1D v4\Examples\HP1\STDECAY\
+TITLE : steady state transport of a nonlinearly adsorbing and decaying contaminant
+# Number of soil layers : 1
+# 1-101  #soil material 1
+#HP1END #########################################################
+
+#HP1BEGIN DATABASE ##############################################
+#add new thermodynamic data - This block will not be overwritten by HP1
+
+SOLUTION_MASTER_SPECIES
+ Pola Pola 0.0 Pola 1.0
+
+SOLUTION_SPECIES
+ Pola = Pola; log_k 0.0
+
+PHASES
+
+EXCHANGE_MASTER_SPECIES
+
+EXCHANGE_SPECIES
+
+SURFACE_MASTER_SPECIES
+ Sor Sor
+
+SURFACE_SPECIES
+ Sor = Sor
+  log_k 0
+
+ Sor + 0.8 Pola = SorPola
+ -no_check; -mole_balance SorPola
+ log_k -99.12493873661
+
+RATES
+ degradation
+ -start
+  10 rem parm(1) first-order degradation coefficient (day-1)
+  30 moles=-parm(1)*TIME*TOT("water")*MOL("Pola")
+  40 SAVE moles
+ -end 
+
+
+#HP1END #########################################################
+
+SELECTED_OUTPUT
+ -file STADS.hse
+ -reset false 
+ -solution true 
+ -distance true 
+ -time true 
+ -pH true 
+ -pe true 
+
+#HP1BEGIN OUTPUT ################################################
+#Define output
+#This block will not be overwritten by HP1
+
+selected_output
+ -totals     Pola
+ -molalities Pola SorPola Sor  
+
+
+#HP1END #########################################################
+
+#HP1BEGIN SOLUTIONDEFINITION ####################################
+#This block will not be overwritten by HP1
+#Definition of the solution compositions - initial and boundary
+
+solution 1001 initial condition
+
+solution 3001 upper boundary solution
+-units mol/kgw
+Pola 1
+
+
+#HP1END #########################################################
+
+#HP1BEGIN INITIAL ###############################################
+#Definition of the initial conditions
+#This block will be overwritten by HP1
+END
+MIX 1 ;	1001	0.500000	; SAVE SOLUTION	1	 ; END
+MIX 2 ;	1001	0.500000	; SAVE SOLUTION	2	 ; END
+MIX 3 ;	1001	0.500000	; SAVE SOLUTION	3	 ; END
+MIX 4 ;	1001	0.500000	; SAVE SOLUTION	4	 ; END
+MIX 5 ;	1001	0.500000	; SAVE SOLUTION	5	 ; END
+MIX 6 ;	1001	0.500000	; SAVE SOLUTION	6	 ; END
+MIX 7 ;	1001	0.500000	; SAVE SOLUTION	7	 ; END
+MIX 8 ;	1001	0.500000	; SAVE SOLUTION	8	 ; END
+MIX 9 ;	1001	0.500000	; SAVE SOLUTION	9	 ; END
+MIX 10 ;	1001	0.500000	; SAVE SOLUTION	10	 ; END
+MIX 11 ;	1001	0.500000	; SAVE SOLUTION	11	 ; END
+MIX 12 ;	1001	0.500000	; SAVE SOLUTION	12	 ; END
+MIX 13 ;	1001	0.500000	; SAVE SOLUTION	13	 ; END
+MIX 14 ;	1001	0.500000	; SAVE SOLUTION	14	 ; END
+MIX 15 ;	1001	0.500000	; SAVE SOLUTION	15	 ; END
+MIX 16 ;	1001	0.500000	; SAVE SOLUTION	16	 ; END
+MIX 17 ;	1001	0.500000	; SAVE SOLUTION	17	 ; END
+MIX 18 ;	1001	0.500000	; SAVE SOLUTION	18	 ; END
+MIX 19 ;	1001	0.500000	; SAVE SOLUTION	19	 ; END
+MIX 20 ;	1001	0.500000	; SAVE SOLUTION	20	 ; END
+MIX 21 ;	1001	0.500000	; SAVE SOLUTION	21	 ; END
+MIX 22 ;	1001	0.500000	; SAVE SOLUTION	22	 ; END
+MIX 23 ;	1001	0.500000	; SAVE SOLUTION	23	 ; END
+MIX 24 ;	1001	0.500000	; SAVE SOLUTION	24	 ; END
+MIX 25 ;	1001	0.500000	; SAVE SOLUTION	25	 ; END
+MIX 26 ;	1001	0.500000	; SAVE SOLUTION	26	 ; END
+MIX 27 ;	1001	0.500000	; SAVE SOLUTION	27	 ; END
+MIX 28 ;	1001	0.500000	; SAVE SOLUTION	28	 ; END
+MIX 29 ;	1001	0.500000	; SAVE SOLUTION	29	 ; END
+MIX 30 ;	1001	0.500000	; SAVE SOLUTION	30	 ; END
+MIX 31 ;	1001	0.500000	; SAVE SOLUTION	31	 ; END
+MIX 32 ;	1001	0.500000	; SAVE SOLUTION	32	 ; END
+MIX 33 ;	1001	0.500000	; SAVE SOLUTION	33	 ; END
+MIX 34 ;	1001	0.500000	; SAVE SOLUTION	34	 ; END
+MIX 35 ;	1001	0.500000	; SAVE SOLUTION	35	 ; END
+MIX 36 ;	1001	0.500000	; SAVE SOLUTION	36	 ; END
+MIX 37 ;	1001	0.500000	; SAVE SOLUTION	37	 ; END
+MIX 38 ;	1001	0.500000	; SAVE SOLUTION	38	 ; END
+MIX 39 ;	1001	0.500000	; SAVE SOLUTION	39	 ; END
+MIX 40 ;	1001	0.500000	; SAVE SOLUTION	40	 ; END
+MIX 41 ;	1001	0.500000	; SAVE SOLUTION	41	 ; END
+MIX 42 ;	1001	0.500000	; SAVE SOLUTION	42	 ; END
+MIX 43 ;	1001	0.500000	; SAVE SOLUTION	43	 ; END
+MIX 44 ;	1001	0.500000	; SAVE SOLUTION	44	 ; END
+MIX 45 ;	1001	0.500000	; SAVE SOLUTION	45	 ; END
+MIX 46 ;	1001	0.500000	; SAVE SOLUTION	46	 ; END
+MIX 47 ;	1001	0.500000	; SAVE SOLUTION	47	 ; END
+MIX 48 ;	1001	0.500000	; SAVE SOLUTION	48	 ; END
+MIX 49 ;	1001	0.500000	; SAVE SOLUTION	49	 ; END
+MIX 50 ;	1001	0.500000	; SAVE SOLUTION	50	 ; END
+MIX 51 ;	1001	0.500000	; SAVE SOLUTION	51	 ; END
+MIX 52 ;	1001	0.500000	; SAVE SOLUTION	52	 ; END
+MIX 53 ;	1001	0.500000	; SAVE SOLUTION	53	 ; END
+MIX 54 ;	1001	0.500000	; SAVE SOLUTION	54	 ; END
+MIX 55 ;	1001	0.500000	; SAVE SOLUTION	55	 ; END
+MIX 56 ;	1001	0.500000	; SAVE SOLUTION	56	 ; END
+MIX 57 ;	1001	0.500000	; SAVE SOLUTION	57	 ; END
+MIX 58 ;	1001	0.500000	; SAVE SOLUTION	58	 ; END
+MIX 59 ;	1001	0.500000	; SAVE SOLUTION	59	 ; END
+MIX 60 ;	1001	0.500000	; SAVE SOLUTION	60	 ; END
+MIX 61 ;	1001	0.500000	; SAVE SOLUTION	61	 ; END
+MIX 62 ;	1001	0.500000	; SAVE SOLUTION	62	 ; END
+MIX 63 ;	1001	0.500000	; SAVE SOLUTION	63	 ; END
+MIX 64 ;	1001	0.500000	; SAVE SOLUTION	64	 ; END
+MIX 65 ;	1001	0.500000	; SAVE SOLUTION	65	 ; END
+MIX 66 ;	1001	0.500000	; SAVE SOLUTION	66	 ; END
+MIX 67 ;	1001	0.500000	; SAVE SOLUTION	67	 ; END
+MIX 68 ;	1001	0.500000	; SAVE SOLUTION	68	 ; END
+MIX 69 ;	1001	0.500000	; SAVE SOLUTION	69	 ; END
+MIX 70 ;	1001	0.500000	; SAVE SOLUTION	70	 ; END
+MIX 71 ;	1001	0.500000	; SAVE SOLUTION	71	 ; END
+MIX 72 ;	1001	0.500000	; SAVE SOLUTION	72	 ; END
+MIX 73 ;	1001	0.500000	; SAVE SOLUTION	73	 ; END
+MIX 74 ;	1001	0.500000	; SAVE SOLUTION	74	 ; END
+MIX 75 ;	1001	0.500000	; SAVE SOLUTION	75	 ; END
+MIX 76 ;	1001	0.500000	; SAVE SOLUTION	76	 ; END
+MIX 77 ;	1001	0.500000	; SAVE SOLUTION	77	 ; END
+MIX 78 ;	1001	0.500000	; SAVE SOLUTION	78	 ; END
+MIX 79 ;	1001	0.500000	; SAVE SOLUTION	79	 ; END
+MIX 80 ;	1001	0.500000	; SAVE SOLUTION	80	 ; END
+MIX 81 ;	1001	0.500000	; SAVE SOLUTION	81	 ; END
+MIX 82 ;	1001	0.500000	; SAVE SOLUTION	82	 ; END
+MIX 83 ;	1001	0.500000	; SAVE SOLUTION	83	 ; END
+MIX 84 ;	1001	0.500000	; SAVE SOLUTION	84	 ; END
+MIX 85 ;	1001	0.500000	; SAVE SOLUTION	85	 ; END
+MIX 86 ;	1001	0.500000	; SAVE SOLUTION	86	 ; END
+MIX 87 ;	1001	0.500000	; SAVE SOLUTION	87	 ; END
+MIX 88 ;	1001	0.500000	; SAVE SOLUTION	88	 ; END
+MIX 89 ;	1001	0.500000	; SAVE SOLUTION	89	 ; END
+MIX 90 ;	1001	0.500000	; SAVE SOLUTION	90	 ; END
+MIX 91 ;	1001	0.500000	; SAVE SOLUTION	91	 ; END
+MIX 92 ;	1001	0.500000	; SAVE SOLUTION	92	 ; END
+MIX 93 ;	1001	0.500000	; SAVE SOLUTION	93	 ; END
+MIX 94 ;	1001	0.500000	; SAVE SOLUTION	94	 ; END
+MIX 95 ;	1001	0.500000	; SAVE SOLUTION	95	 ; END
+MIX 96 ;	1001	0.500000	; SAVE SOLUTION	96	 ; END
+MIX 97 ;	1001	0.500000	; SAVE SOLUTION	97	 ; END
+MIX 98 ;	1001	0.500000	; SAVE SOLUTION	98	 ; END
+MIX 99 ;	1001	0.500000	; SAVE SOLUTION	99	 ; END
+MIX 100 ;	1001	0.500000	; SAVE SOLUTION	100	 ; END
+MIX 101 ;	1001	0.500000	; SAVE SOLUTION	101	 ; END
+
+#HP1END #########################################################
+
+#HP1BEGIN GEOCHEMICAL ###########################################
+#Define geochemical model
+#This block will not be overwritten by HP1
+
+SURFACE 1-101 @Layer 1@
+ Sor 1e100 1 1e100
+  -no_edl
+  -equilibrate with solution 1001
+
+
+
+KINETICS 1-101 @Layer 1@
+ degradation
+   -formula Pola 1
+   -parms 0.02 #d-1
+
+
+#HP1END #########################################################
+
+#HP1BEGIN TRANSPORT  ############################################
+#Definition of transport
+#This block will be overwritten by HP1
+
+PRINT
+ -reset false
+ -echo_input true
+ -warnings 500
+
+TRANSPORT
+ -cells 101
+ -gnuplot true
+
+#HP1END #########################################################
+

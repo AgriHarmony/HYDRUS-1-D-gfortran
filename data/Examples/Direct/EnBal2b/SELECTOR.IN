@@ -1,0 +1,47 @@
+Pcp_File_Version=4
+*** BLOCK A: BASIC INFORMATION *****************************************
+Heading
+Welcome to HYDRUS-1D
+LUnit  TUnit  MUnit  (indicated units are obligatory for all input data)
+cm
+days
+mmol
+lWat   lChem lTemp  lSink lRoot lShort lWDep lScreen lVariabBC lEquil lInverse
+ t     f     t      f     f     f      t     t       t         t         f
+lSnow  lHP1   lMeteo  lVapor  lDummy  lFluxes lDummy  lDummy  lDummy  lDummy
+ f       f       t       t       f       f       f       f       f       f
+NMat    NLay  CosAlpha
+  1       1       1
+*** BLOCK B: WATER FLOW INFORMATION ************************************
+MaxIt   TolTh   TolH       (maximum number of iterations and tolerances)
+  10    0.001      1
+TopInf WLayer KodTop InitCond
+ t     t      -1       t
+BotInf qGWLF FreeD SeepF KodBot DrainF  hSeep
+ f     f     t     f     -1      f      0
+    hTab1   hTabN
+    1e-006   10000
+    Model   Hysteresis
+      0          0
+   thr     ths    Alfa      n         Ks       l
+  0.011   0.445  0.0277    1.38       34.2     0.5 
+*** BLOCK C: TIME INFORMATION ******************************************
+        dt       dtMin       dtMax     DMul    DMul2  ItMin ItMax  MPL
+      0.001      1e-005        0.01     1.3     0.7     3     7    24
+      tInit        tMax
+        328         340
+  lPrintD  nPrintSteps tPrintInterval lEnter
+     f           1             1       t
+TPrint(1),TPrint(2),...,TPrint(MPL)
+      328.5         329       329.5         330       330.5         331 
+      331.5         332       332.5         333       333.5         334 
+      334.5         335       335.5         336       336.5         337 
+      337.5         338       338.5         339       339.5         340 
+*** BLOCK E: HEAT TRANSPORT INFORMATION *********************************************************
+    Qn      Qo    Disper.    B1          B2          B3          Cn          Co           Cw
+  0.555       0       5 1.47054e+016 -1.5518e+017 3.16617e+017 1.43327e+014 1.8737e+014 3.12035e+014 
+      tAmpl     tPeriod    Campbell   MeltConst  lDummy  lDummy  lDummy  lDummy  lDummy
+          0           0          0       0.43       f       f       f       f       f
+      kTopT       TTop      kBotT       TBot
+         -1         20           0         20
+*** END OF INPUT FILE 'SELECTOR.IN' ************************************

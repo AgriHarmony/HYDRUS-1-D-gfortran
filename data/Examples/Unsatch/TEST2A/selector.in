@@ -1,0 +1,67 @@
+Pcp_File_Version=3
+*** BLOCK A: BASIC INFORMATION *****************************************
+Heading
+Example 2 - One year simulation
+LUnit  TUnit  MUnit  (indicated units are obligatory for all input data)
+cm
+days
+mmol
+lWat   lChem lTemp  lSink lRoot lShort lWDep lScreen lVariabBC lCO2   lKRed
+ t     t     f      t     f     f      f     t       f         f         f
+lSnow   lDummy  lDummy
+ f       f       f       f       f       f       f       f       f       f       f
+NMat    NLay  CosAlpha
+  1       1       1
+*** BLOCK B: WATER FLOW INFORMATION ************************************
+MaxIt   TolTh   TolH       (maximum number of iterations and tolerances)
+  20   0.0001    0.1
+TopInf WLayer KodTop InitCond
+ f     f      -1       f
+BotInf qGWLF FreeD SeepF KodBot DrainF
+ f     f     t     f     -1      f
+         rTop         rBot        rRoot
+          -1            0          0.9
+    hTab1   hTabN
+   -0.0001  -10000
+    Model   Hysteresis
+      0          0
+   thr     ths    Alfa      n         Ks       l
+  0.001    0.48 0.015022   1.592      60.48     0.5 
+*** BLOCK C: TIME INFORMATION ******************************************
+        dt       dtMin       dtMax     DMul    DMul2  ItMin ItMax  MPL
+       0.01       0.001           1     1.3     0.8     3     7    10
+      tInit        tMax
+          0         365
+  lPrintD  nPrintSteps tPrintInterval lEnter
+     f           1             1       t
+TPrint(1),TPrint(2),...,TPrint(MPL)
+         10          20          30          40          50         100 
+        150         200         300         365 
+*** BLOCK G: SOLUTE TRANSPORT INFORMATION *****************************************************
+ Epsi  lUpW  lArtD lLagr    PeCr   lTort
+  0.5     f     f     f        2     f
+ lRate  lSilica  UCrit    MaxChIter
+     f     f         0         1
+     Bulk.d.      Difuz.    DisperL.        CEC    Calcite SA   Dolomite SA     DOC         K1          K2          K3   
+        1.3          30           0           0      0.0001           0           0           1           1           1 
+      kTopSolute  SolTop    kBotSolute  SolBot
+         -1          1          0          1
+  nSolConc  nAdsConc nPrecConc
+         2         1         1
+     Ca          Mg          Na           K         Alk         SO4          Cl       Tracer
+      12.2       9.66       37.5       0.27        6.5       22.1       31.1          1 
+      12.2       9.66       37.5       0.27        6.5       22.1       31.1          0 
+     Ca          Mg          Na           K
+         0          0          0          0 
+  Calcite      Gypsum     Dolomite    HydroMg    Nesquohon.    Sepiol.
+       100          0          0          0          0          0 
+*** BLOCK G: ROOT WATER UPTAKE INFORMATION *****************************
+     Model  (0 - Feddes, 1 - S shape)  cRootMax    OmegaC
+        0                                   0           1
+       P0       P2H       P2L       P3          r2H        r2L
+      -10      -200      -800     -8000         0.5         0.1
+POptm(1),POptm(2),...,POptm(NMat)
+     -25 
+     Solute Reduction
+        f
+*** END OF INPUT FILE 'SELECTOR.IN' ************************************

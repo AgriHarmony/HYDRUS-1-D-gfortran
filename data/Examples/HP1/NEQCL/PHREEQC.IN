@@ -1,0 +1,144 @@
+#HP1BEGIN GENERAL ###############################################
+#This block will be overwritten by HP1
+# DATABASE C:\Program Files\PC-Progress\HYDRUS-1D 4.xx\HP1 Databases
+# Project Folder : C:\ussl\HYDRUS-1D v4\Examples\HP1\NEQCL\
+TITLE : Physical nonequilibrium transport of chloride (verification problem 1)
+# Number of soil layers : 1
+# 1-21  #soil material 1
+# 22-42  #soil material (im) 1
+#HP1END #########################################################
+
+#HP1BEGIN DATABASE ##############################################
+#add new thermodynamic data - This block will not be overwritten by HP1
+
+SOLUTION_MASTER_SPECIES
+
+SOLUTION_SPECIES
+
+PHASES
+
+EXCHANGE_MASTER_SPECIES
+
+EXCHANGE_SPECIES
+
+SURFACE_MASTER_SPECIES
+
+SURFACE_SPECIES
+
+RATES
+
+
+
+
+#HP1END #########################################################
+
+SELECTED_OUTPUT
+ -file EQCL.hse
+ -reset false 
+ -solution true 
+ -distance true 
+ -time true 
+ -pH true 
+ -pe true 
+
+#HP1BEGIN OUTPUT ################################################
+#Define output
+#This block will not be overwritten by HP1
+
+SELECTED_OUTPUT
+ -totals Cl
+
+
+
+
+#HP1END #########################################################
+
+#HP1BEGIN SOLUTIONDEFINITION ####################################
+#This block will not be overwritten by HP1
+#Definition of the solution compositions - initial and boundary
+
+SOLUTION 1001 initial solution
+
+SOLUTION 3001 boundary solution
+Cl 1
+
+END
+
+
+
+#HP1END #########################################################
+
+#HP1BEGIN INITIAL ###############################################
+#Definition of the initial conditions
+#This block will be overwritten by HP1
+END
+MIX 1 ;	1001	0.400000	; SAVE SOLUTION	1	 ; END
+MIX 2 ;	1001	0.400000	; SAVE SOLUTION	2	 ; END
+MIX 3 ;	1001	0.400000	; SAVE SOLUTION	3	 ; END
+MIX 4 ;	1001	0.400000	; SAVE SOLUTION	4	 ; END
+MIX 5 ;	1001	0.400000	; SAVE SOLUTION	5	 ; END
+MIX 6 ;	1001	0.400000	; SAVE SOLUTION	6	 ; END
+MIX 7 ;	1001	0.400000	; SAVE SOLUTION	7	 ; END
+MIX 8 ;	1001	0.400000	; SAVE SOLUTION	8	 ; END
+MIX 9 ;	1001	0.400000	; SAVE SOLUTION	9	 ; END
+MIX 10 ;	1001	0.400000	; SAVE SOLUTION	10	 ; END
+MIX 11 ;	1001	0.400000	; SAVE SOLUTION	11	 ; END
+MIX 12 ;	1001	0.400000	; SAVE SOLUTION	12	 ; END
+MIX 13 ;	1001	0.400000	; SAVE SOLUTION	13	 ; END
+MIX 14 ;	1001	0.400000	; SAVE SOLUTION	14	 ; END
+MIX 15 ;	1001	0.400000	; SAVE SOLUTION	15	 ; END
+MIX 16 ;	1001	0.400000	; SAVE SOLUTION	16	 ; END
+MIX 17 ;	1001	0.400000	; SAVE SOLUTION	17	 ; END
+MIX 18 ;	1001	0.400000	; SAVE SOLUTION	18	 ; END
+MIX 19 ;	1001	0.400000	; SAVE SOLUTION	19	 ; END
+MIX 20 ;	1001	0.400000	; SAVE SOLUTION	20	 ; END
+MIX 21 ;	1001	0.400000	; SAVE SOLUTION	21	 ; END
+MIX 1 ;	1001	0.100000	; SAVE SOLUTION	22	 ; END
+MIX 2 ;	1001	0.100000	; SAVE SOLUTION	23	 ; END
+MIX 3 ;	1001	0.100000	; SAVE SOLUTION	24	 ; END
+MIX 4 ;	1001	0.100000	; SAVE SOLUTION	25	 ; END
+MIX 5 ;	1001	0.100000	; SAVE SOLUTION	26	 ; END
+MIX 6 ;	1001	0.100000	; SAVE SOLUTION	27	 ; END
+MIX 7 ;	1001	0.100000	; SAVE SOLUTION	28	 ; END
+MIX 8 ;	1001	0.100000	; SAVE SOLUTION	29	 ; END
+MIX 9 ;	1001	0.100000	; SAVE SOLUTION	30	 ; END
+MIX 10 ;	1001	0.100000	; SAVE SOLUTION	31	 ; END
+MIX 11 ;	1001	0.100000	; SAVE SOLUTION	32	 ; END
+MIX 12 ;	1001	0.100000	; SAVE SOLUTION	33	 ; END
+MIX 13 ;	1001	0.100000	; SAVE SOLUTION	34	 ; END
+MIX 14 ;	1001	0.100000	; SAVE SOLUTION	35	 ; END
+MIX 15 ;	1001	0.100000	; SAVE SOLUTION	36	 ; END
+MIX 16 ;	1001	0.100000	; SAVE SOLUTION	37	 ; END
+MIX 17 ;	1001	0.100000	; SAVE SOLUTION	38	 ; END
+MIX 18 ;	1001	0.100000	; SAVE SOLUTION	39	 ; END
+MIX 19 ;	1001	0.100000	; SAVE SOLUTION	40	 ; END
+MIX 20 ;	1001	0.100000	; SAVE SOLUTION	41	 ; END
+MIX 21 ;	1001	0.100000	; SAVE SOLUTION	42	 ; END
+
+#HP1END #########################################################
+
+#HP1BEGIN GEOCHEMICAL ###########################################
+#Define geochemical model
+#This block will not be overwritten by HP1
+
+
+
+
+
+#HP1END #########################################################
+
+#HP1BEGIN TRANSPORT  ############################################
+#Definition of transport
+#This block will be overwritten by HP1
+
+PRINT
+ -reset false
+ -echo_input true
+ -warnings 500
+
+TRANSPORT
+ -cells 21
+ -gnuplot true
+
+#HP1END #########################################################
+

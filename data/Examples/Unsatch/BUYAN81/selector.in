@@ -1,0 +1,73 @@
+Pcp_File_Version=3
+*** BLOCK A: BASIC INFORMATION *****************************************
+Heading
+Missouri Field Experiment - 1981
+LUnit  TUnit  MUnit  (indicated units are obligatory for all input data)
+cm
+days
+mmol
+lWat   lChem lTemp  lSink lRoot lShort lWDep lScreen lVariabBC lCO2   lKRed
+ t     f     t      t     t     f      f     t       t         t         f
+lSnow   lDummy  lDummy
+ f       f       f       f       f       f       f       f       f       f       f
+NMat    NLay  CosAlpha
+  3       3       1
+*** BLOCK B: WATER FLOW INFORMATION ************************************
+MaxIt   TolTh   TolH       (maximum number of iterations and tolerances)
+  20   0.0005   0.05
+TopInf WLayer KodTop InitCond
+ t     f      -1       f
+BotInf qGWLF FreeD SeepF KodBot DrainF
+ f     f     t     f     -1      f
+    hTab1   hTabN
+    1e-005  100000
+    Model   Hysteresis
+      0          0
+   thr     ths    Alfa      n         Ks       l
+      0   0.491  0.0512   1.246        100     0.5 
+      0   0.513  0.0508   1.199        100     0.5 
+      0   0.509  0.0488   1.142        100     0.5 
+*** BLOCK C: TIME INFORMATION ******************************************
+        dt       dtMin       dtMax     DMul    DMul2  ItMin ItMax  MPL
+       0.02      0.0002         0.5     1.3     0.7     3     7     6
+      tInit        tMax
+         61         245
+  lPrintD  nPrintSteps tPrintInterval lEnter
+     f           1             1       t
+TPrint(1),TPrint(2),...,TPrint(MPL)
+         92         122         153         184         214         245 
+*** BLOCK D: ROOT GROWTH INFORMATION ***********************************
+     iRFak     tRMin     tRMed     tRMax     xRMin     xRMed     xRMax
+        1        65         0       130        15         0        70
+*** BLOCK E: HEAT TRANSPORT INFORMATION *********************************************************
+    Qn      Qo    Disper.    B1          B2          B3          Cn          Co           Cw
+  0.484   0.025     1.5 -1.2706e+016 -6.2046e+016  1.626e+017 1.4333e+014 1.8737e+014 3.1204e+014 
+  0.476   0.011     1.5 -1.2706e+016 -6.2046e+016  1.626e+017 1.4333e+014 1.8737e+014 3.1204e+014 
+  0.481    0.01     1.5 -1.2706e+016 -6.2046e+016  1.626e+017 1.4333e+014 1.8737e+014 3.1204e+014 
+      tAmpl     tPeriod    Campbell   MeltConst
+          5           1          0          0
+      kTopT       TTop      kBotT       TBot
+          1         20           0         20
+*** BLOCK G: CARBON DIOXIDE TRANSPORT INFORMATION **********************
+  lStagn
+     f
+    kTopCO2      CO2Top     kBotCO2    CO2Bot
+          1    0.00033          -1          0
+      DispA       DispW          Dl
+    13737.6       1.529         1.5 
+    13737.6       1.529         1.5 
+    13737.6       1.529         1.5 
+      GamR0      GamS0     PDDMax      kProd
+       0.28        0.42        1275           0
+      Alpha
+      0.105 
+        B2         B1         cM2        cM1        HB1       HB2        P0c        P50c
+       6014        6677        0.14        0.19        -100     -1e+008           3        1000
+*** BLOCK G: ROOT WATER UPTAKE INFORMATION *****************************
+     Model  (0 - Feddes, 1 - S shape)  cRootMax    OmegaC
+        0                                   0           1
+       P0       P2H       P2L       P3          r2H        r2L
+      -10      -200      -800     -8000         0.5         0.1
+POptm(1),POptm(2),...,POptm(NMat)
+     -25      -25      -25 
+*** END OF INPUT FILE 'SELECTOR.IN' ************************************

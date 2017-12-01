@@ -1,0 +1,11 @@
+ ******* Program HYDRUS
+ ******* Solute transport with nonlinear cation adsorption                      
+  
+ Date:   8. 7.    Time:  19:20:18
+ Units: L = cm   , T = days , M = mmol 
+
+       Time        rTop      rRoot      vTop       vRoot      vBot     sum(rTop) sum(rRoot)  sum(vTop) sum(vRoot)  sum(vBot)    hTop       hRoot      hBot      t-level
+        [T]       [L/T]      [L/T]      [L/T]      [L/T]      [L/T]       [L]        [L]        [L]        [L]        [L]        [L]        [L]        [L]
+
+        .00200   .000E+00   .000E+00  -.649E+01   .000E+00  -.649E+01   .000E+00   .000E+00  -.130E-01   .000E+00  -.130E-01   .000E+00   .000E+00   .000E+00       1
+end

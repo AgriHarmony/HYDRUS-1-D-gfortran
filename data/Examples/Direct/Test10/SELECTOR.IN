@@ -1,0 +1,42 @@
+Pcp_File_Version=3
+*** BLOCK A: BASIC INFORMATION *****************************************
+Heading
+Welcome to HYDRUS-1D
+LUnit  TUnit  MUnit  (indicated units are obligatory for all input data)
+cm
+hours
+mmol
+lWat   lChem lTemp  lSink lRoot lShort lWDep lScreen lVariabBC lEquil lInverse
+ t     f     f      f     f     f      f     t       t         t         f
+lSnow   lDummy  lDummy
+ f       f       f       f       f       f
+NMat    NLay  CosAlpha
+  1       1       1
+*** BLOCK B: WATER FLOW INFORMATION ************************************
+MaxIt   TolTh   TolH       (maximum number of iterations and tolerances)
+  11   0.0001      2
+TopInf WLayer KodTop InitCond
+ f     f      -1       f
+BotInf qGWLF FreeD SeepF KodBot DrainF
+ t     f     f     f      1      f
+         rTop         rBot        rRoot
+           0            0            0
+    hTab1   hTabN
+         0       0
+    Model   Hysteresis
+      0          3
+    Kappa
+     -1
+   thr     ths    Alfa      n         Ks       l      thm     thsW   AlfaW       KsW
+ 0.0612    0.36   0.042    5.25        119     0.5    0.36    0.27      0.084     119 
+*** BLOCK C: TIME INFORMATION ******************************************
+        dt       dtMin       dtMax     DMul    DMul2  ItMin ItMax  MPL
+      0.001      0.0001           1     1.3     0.7     3     7    10
+      tInit        tMax
+          0          10
+  lPrintD  nPrintSteps tPrintInterval lEnter
+     f           1             1       t
+TPrint(1),TPrint(2),...,TPrint(MPL)
+          1           2           3           4           5           6 
+          7           8           9          10 
+*** END OF INPUT FILE 'SELECTOR.IN' ************************************

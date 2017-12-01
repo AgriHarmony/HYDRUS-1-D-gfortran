@@ -1,0 +1,2 @@
+Pcp_File_Version=1
+Saito et al., 2006, Riverside, EnergyBalance, hourly data, Solar Radiation, Tt

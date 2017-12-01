@@ -1,0 +1,53 @@
+*** BLOCK A: BASIC INFORMATION *****************************************
+Heading
+Solute Transport with Nitrification Chain
+LUnit  TUnit  MUnit  (indicated units are obligatory for all input data)
+cm
+hours
+-
+lWat   lChem lTemp  lSink lRoot lShort lWDep lScreen lVariabBC lEquil lInverse
+ f     t     f      f     f     f      f     t       f         t         f
+NMat    NLay  CosAlpha
+  1       1       1
+*** BLOCK B: WATER FLOW INFORMATION ************************************
+MaxIt   TolTh   TolH       (maximum number of iterations and tolerances)
+  20   0.0001    0.1
+TopInf WLayer KodTop InitCond
+ f     f       1       f
+BotInf qGWLF FreeD SeepF KodBot DrainF
+ f     f     f     f      1      f
+    hTab1   hTabN
+    1e-006   10000
+    Model   Hysteresis
+      0          0
+   thr     ths    Alfa      n         Ks       l
+      0       1    0.05       2          1     0.5 
+*** BLOCK C: TIME INFORMATION ******************************************
+        dt       dtMin       dtMax     DMul    DMul2  ItMin ItMax  MPL
+          1      0.0001         100     1.3    0.33     3     7     3
+      tInit        tMax
+          0         200
+TPrint(1),TPrint(2),...,TPrint(MPL)
+         50         100         200 
+*** BLOCK F: SOLUTE TRANSPORT INFORMATION *****************************************************
+ Epsi  lUpW  lArtD lTDep    cTolA    cTolR   MaxItC    PeCr  No.Solutes  lTort
+  0.5     f     f     f         0         0     1        2        3       t
+     Bulk.d.     DisperL.      Frac      Mobile WC (1..NMat)
+       1000           0           1           0 
+         DifW       DifG                n-th solute
+       0.18           0 
+         Ks          Nu        Beta       Henry       SnkL1       SnkS1       SnkG1       SnkL1'      SnkS1'      SnkG1'      SnkL0       SnkS0       SnkG0        Alfa
+      0.001           0           1           0           0           0           0       0.005       0.005           0           0           0           0           0 
+         DifW       DifG                n-th solute
+       0.18           0 
+         Ks          Nu        Beta       Henry       SnkL1       SnkS1       SnkG1       SnkL1'      SnkS1'      SnkG1'      SnkL0       SnkS0       SnkG0        Alfa
+          0           0           1           0           0           0           0         0.1           0           0           0           0           0           0 
+         DifW       DifG                n-th solute
+       0.18           0 
+         Ks          Nu        Beta       Henry       SnkL1       SnkS1       SnkG1       SnkL1'      SnkS1'      SnkG1'      SnkL0       SnkS0       SnkG0        Alfa
+          0           0           1           0           0           0           0           0           0           0           0           0           0           0 
+      kTopSolute  SolTop    kBotSolute  SolBot
+         -1           1           0           0           0           0           0           0 
+      tPulse
+        366
+*** END OF INPUT FILE 'SELECTOR.IN' ************************************

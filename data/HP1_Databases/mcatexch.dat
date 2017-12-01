@@ -1,0 +1,341 @@
+SOLUTION_MASTER_SPECIES
+#
+#element	species	alk	gfw_formula	element_gfw
+#
+H		H+	-1.0	H		1.008
+H(0)		H2	0.0	H
+H(1)		H+	-1.0	0.0
+E		e-	0.0	0.0		0.0
+O		H2O	0.0	O		16.0
+O(0)		O2	0.0	O
+O(-2)		H2O	0.0	0.0
+C        CO3-2          2.0     HCO3            12.0111
+C(+4)    CO3-2          2.0     HCO3
+Ca		Ca+2	0.0	Ca		40.08
+Mg		Mg+2	0.0	Mg		24.312
+Na		Na+	0.0	Na		22.9898
+K		K+	0.0	K		39.102
+Cl		Cl-	0.0	Cl		35.453
+Alkalinity	CO3-2	1.0	Ca0.5(CO3)0.5	50.05
+Br		Br-	0.0	Br		79.904
+Zn		Zn+2	0.0	Zn		65.37
+Cd		Cd+2	0.0	Cd		112.4
+Pb		Pb+2	0.0	Pb		207.19
+
+
+SOLUTION_SPECIES
+
+H+ = H+
+	log_k	0.0
+	-gamma	9.0	0.0410
+
+e- = e-
+	log_k	0.0
+
+H2O = H2O
+  log_k 0.0
+  -gamma 3.0 0.0
+
+Ca+2 = Ca+2
+	log_k	0.0
+	-gamma	6.0	0.0410
+
+CO3-2 = CO3-2
+        log_k           0.000
+        -gamma 4.0 0.0410
+
+Mg+2 = Mg+2
+	log_k	0.0
+	-gamma	8.0	0.0410
+
+Na+ = Na+
+	log_k	0.0
+	-gamma	4.0	0.0410
+
+K+ = K+
+	log_k	0.0
+	-gamma	3.0	0.0410
+
+Cl- = Cl-
+	log_k	0.0
+	-gamma	3.0	0.0410
+
+Br- = Br-
+	log_k	0.0
+	-gamma	3.0	0.0410
+
+Zn+2 = Zn+2
+	log_k	0.0
+	-gamma	6.0	0.0410
+
+Cd+2 = Cd+2
+	log_k	0.0
+	-gamma	5.0	0.0410
+
+Pb+2 = Pb+2
+	log_k	0.0
+	-gamma	4.5	0.0410
+
+H2O = OH- + H+
+	log_k	-14.0
+	-gamma	3.5	0.0410
+
+2 H2O = O2 + 4 H+ + 4 e-
+        log_k           -86.08
+
+2 H+ + 2 e- = H2
+        log_k           -3.15
+
+CO3-2 + H+ = HCO3-
+        log_k           10.329
+
+CO3-2 + 2 H+ = CO2 + H2O
+        log_k           16.681
+
+
+Na+ + H2O = NaOH + H+
+	log_k	-14.18
+ -gamma 4.0 0.0
+
+K+ + H2O = KOH + H+
+	log_k	-14.46
+ -gamma 4.0 0
+
+Ca+2 + H2O = CaOH+ + H+
+	log_k	-12.78
+-gamma 4.0 0.041
+
+Mg+2 + H2O = MgOH+ + H+
+	log_k	-11.44
+-gamma 4.0 0.0410
+
+Cd+2 + H2O = CdOH+ + H+
+        log_k           -10.080
+-gamma 4.0 0.0410
+
+Cd+2 + 2 H2O = Cd(OH)2 + 2 H+
+        log_k           -20.350
+-gamma 3.0 0
+
+Cd+2 + 3 H2O = Cd(OH)3- + 3 H+
+        log_k           -33.300
+-gamma 4.0 0.0410
+
+Cd+2 + 4 H2O = Cd(OH)4-2 + 4 H+
+       log_k           -47.350
+-gamma 4.0 0.0410
+
+Cd+2 + Cl- = CdCl+
+        log_k           1.980
+-gamma 4.0 0.0410
+
+Cd+2 + 2 Cl- = CdCl2
+        log_k           2.600
+-gamma 3.0 0
+
+Cd+2 + 3 Cl- = CdCl3-
+        log_k           2.400
+-gamma 4.0 0.0410
+
+Zn+2 + H2O = ZnOH+ + H+
+        log_k           -8.96
+-gamma 4.0 0.0410
+
+Zn+2 + 2 H2O = Zn(OH)2 + 2 H+
+        log_k           -16.900
+-gamma 3.0 0
+
+Zn+2 + 3 H2O = Zn(OH)3- + 3 H+
+        log_k           -28.400
+-gamma 4.0 0.0410
+
+Zn+2 + 4 H2O = Zn(OH)4-2 + 4 H+
+        log_k           -41.200
+-gamma 4.0 0.0410
+
+Zn+2 + Cl- = ZnCl+
+        log_k           0.43
+-gamma 4.0 0.0410
+
+Zn+2 + 2 Cl- = ZnCl2
+        log_k           0.45
+-gamma 3.0 0.0
+
+Zn+2 + 3Cl- = ZnCl3-
+        log_k           0.5
+-gamma 4.0 0.0410
+
+Zn+2 + 4Cl- = ZnCl4-2
+        log_k           0.2
+-gamma 4.0 0.0410
+
+Pb+2 + H2O = PbOH+ + H+
+        log_k           -7.710
+-gamma 4.0 0.0410
+
+Pb+2 + 2 H2O = Pb(OH)2 + 2 H+
+        log_k           -17.120
+-gamma 3.0 0.0
+
+Pb+2 + 3 H2O = Pb(OH)3- + 3 H+
+        log_k           -28.060
+-gamma 4.0 0.0410
+
+Pb+2 + 4 H2O = Pb(OH)4-2 + 4 H+
+        log_k           -39.700
+-gamma 4.0 0.0410
+
+Pb+2 + Cl- = PbCl+
+        log_k           1.600
+-gamma 4.0 0.0410
+
+Pb+2 + 2 Cl- = PbCl2
+        log_k           1.800
+-gamma 3.0 0.0
+
+Pb+2 + 3 Cl- = PbCl3-
+        log_k           1.700
+-gamma 4.0 0.0410
+
+Pb+2 + 4 Cl- = PbCl4-2
+        log_k           1.380
+-gamma 4.0 0.0410
+
+PHASES 
+O2(g)
+        O2 = O2
+        log_k           -2.960
+
+H2(g)
+        H2 = H2
+        log_k           -3.150
+
+
+EXCHANGE_MASTER_SPECIES
+	Xa	Xa-
+	Xb	Xb-
+	Xc	Xc-
+	Xd	Xd-
+	Xe	Xe-
+	Xf	Xf-
+
+EXCHANGE_SPECIES
+	Xa- = Xa-
+	 log_k	0.0
+        H+ + Xa- = HXa
+         log_k 1.65
+	Na+ + Xa- = NaXa
+	 log_k	-1
+	K+ + Xa- = KXa
+	 log_k	-0.3
+	Ca+2 + 2Xa- = CaXa2
+	 log_k	-0.2
+	Mg+2 + 2Xa- = MgXa2
+ 	 log_k	-0.4
+	Cd+2 + 2Xa- = CdXa2
+ 	 log_k	-0.2
+	Pb+2 + 2Xa- = PbXa2
+ 	 log_k	0.05
+	Zn+2 + 2Xa- = ZnXa2
+ 	 log_k	-0.2
+
+	Xb- = Xb-
+	 log_k	0.0
+        H+ + Xb- = HXb
+         log_k 3.3
+	Na+ + Xb- = NaXb
+	 log_k	-1
+	K+ + Xb- = KXb
+	 log_k	-0.3
+	Ca+2 + 2Xb- = CaXb2
+	 log_k	-0.2
+	Mg+2 + 2Xb- = MgXb2
+ 	 log_k	-0.4
+	Cd+2 + 2Xb- = CdXb2
+ 	 log_k	-0.2
+	Pb+2 + 2Xb- = PbXb2
+ 	 log_k	0.05
+	Zn+2 + 2Xb- = ZnXb2
+ 	 log_k	-0.2
+
+	Xc- = Xc-
+	 log_k	0.0
+        H+ + Xc- = HXc
+         log_k 4.95
+	Na+ + Xc- = NaXc
+	 log_k	-1
+	K+ + Xc- = KXc
+	 log_k	-0.3
+	Ca+2 + 2Xc- = CaXc2
+	 log_k	-0.2
+	Mg+2 + 2Xc- = MgXc2
+ 	 log_k	-0.4
+	Cd+2 + 2Xc- = CdXc2
+ 	 log_k	-0.2
+	Pb+2 + 2Xc- = PbXc2
+ 	 log_k	0.05
+	Zn+2 + 2Xc- = ZnXc2
+ 	 log_k	-0.2
+
+	Xd- = Xd-
+	 log_k	0.0
+        H+ + Xd- = HXd
+         log_k 6.85
+	Na+ + Xd- = NaXd
+	 log_k	-1
+	K+ + Xd- = KXd
+	 log_k	-0.3
+	Ca+2 + 2Xd- = CaXd2
+	 log_k	-0.2
+	Mg+2 + 2Xd- = MgXd2
+ 	 log_k	-0.4
+	Cd+2 + 2Xd- = CdXd2
+ 	 log_k	-0.2
+	Pb+2 + 2Xd- = PbXd2
+ 	 log_k	0.05
+	Zn+2 + 2Xd- = ZnXd2
+ 	 log_k	-0.2
+
+	Xe- = Xe-
+	 log_k	0.0
+        H+ + Xe- = HXe
+         log_k 9.6
+	Na+ + Xe- = NaXe
+	 log_k	-1
+	K+ + Xe- = KXe
+	 log_k	-0.3
+	Ca+2 + 2Xe- = CaXe2
+	 log_k	-0.2
+	Mg+2 + 2Xe- = MgXe2
+ 	 log_k	-0.4
+	Cd+2 + 2Xe- = CdXe2
+ 	 log_k	-0.2
+	Pb+2 + 2Xe- = PbXe2
+ 	 log_k	0.05
+	Zn+2 + 2Xe- = ZnXe2
+ 	 log_k	-0.2
+
+	Xf- = Xf-
+	 log_k	0.0
+        H+ + Xf- = HXf
+         log_k 12.35
+	Na+ + Xf- = NaXf
+	 log_k	-1
+	K+ + Xf- = KXf
+	 log_k	-0.3
+	Ca+2 + 2Xf- = CaXf2
+	 log_k	-0.2
+	Mg+2 + 2Xf- = MgXf2
+ 	 log_k	-0.4
+	Cd+2 + 2Xf- = CdXf2
+ 	 log_k	-0.2
+	Pb+2 + 2Xf- = PbXf2
+ 	 log_k	0.05
+	Zn+2 + 2Xf- = ZnXf2
+ 	 log_k	-0.2
+
+
+
+
+
+	

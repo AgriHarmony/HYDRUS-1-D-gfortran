@@ -1,0 +1,26 @@
+Pcp_File_Version=4
+*** BLOCK I: ATMOSPHERIC INFORMATION  **********************************
+   MaxAL                    (MaxAL = number of atmospheric data-records)
+     16
+ DailyVar  SinusVar  lDummy  lDummy  lDummy  lDummy  lDummy  lDummy  lDummy  lDummy
+       f       f       f       f       f       t       f       f       f       f
+ hCritS                 (max. allowed pressure head at the soil surface)
+      0
+       tAtm        Prec       rSoil       rRoot      hCritA          rB          hB          ht        tTop        tBot        Ampl    RootDepth
+        329           0           0           0      100000           0           0           0           0           0           0 
+        330           0           0           0      100000           0           0           0           0           0           0 
+        331           0           0           0      100000           0           0           0           0           0           0 
+        332           0           0           0      100000           0           0           0           0           0           0 
+        333           0           0           0      100000           0           0           0           0           0           0 
+        334           0           0           0      100000           0           0           0           0           0           0 
+      334.5           0           0           0      100000           0           0           0           0           0           0 
+     334.55       10.98           0           0      100000           0           0           0           0           0           0 
+        335           0           0           0      100000           0           0           0           0           0           0 
+      335.4           0           0           0      100000           0           0           0           0           0           0 
+    335.425        7.96           0           0      100000           0           0           0           0           0           0 
+        336           0           0           0      100000           0           0           0           0           0           0 
+        337           0           0           0      100000           0           0           0           0           0           0 
+        338           0           0           0      100000           0           0           0           0           0           0 
+        339           0           0           0      100000           0           0           0           0           0           0 
+        340           0           0           0      100000           0           0           0           0           0           0 
+end*** END OF INPUT FILE 'ATMOSPH.IN' **********************************

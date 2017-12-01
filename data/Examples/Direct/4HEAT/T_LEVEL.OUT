@@ -1,0 +1,11 @@
+ ******* Program HYDRUS
+ ******* Heat transport under fluctuating atmospheric condition                 
+  
+ Date:   1.10.    Time:  14: 4:58
+ Units: L = cm   , T = sec  , M = mmol 
+
+       Time        rTop      rRoot      vTop       vRoot      vBot     sum(rTop) sum(rRoot)  sum(vTop) sum(vRoot)  sum(vBot)    hTop       hRoot      hBot      t-level
+        [T]       [L/T]      [L/T]      [L/T]      [L/T]      [L/T]       [L]        [L]        [L]        [L]        [L]        [L]        [L]        [L]
+
+     360.00000   .000E+00   .000E+00  -.116E-02   .000E+00  -.116E-02   .000E+00   .000E+00  -.417E+00   .000E+00  -.417E+00   .000E+00   .000E+00   .000E+00       1
+end
