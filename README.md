@@ -25,11 +25,12 @@ This repository __only__ is small modification which make source code running on
     - data/Exmaples/HP1
     - data/Exmaples/Inverse
     - data/Exmaples/Unstach
-If you want to run Direct/TEST10, then
+    
+For example, if you want to run Direct/TEST10, then copy the folder to input_output
 ```
 cp -r data/Examples/Direct/Test10 input_output/.
 ```
-Optional: Set path in LEVEL_01.DIR  
+(Optional: If you want to change reading directory, set path in LEVEL_01.DIR )
 
 Compile the HYDRUS source code then run
 ```
