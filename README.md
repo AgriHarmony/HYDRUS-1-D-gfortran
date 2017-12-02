@@ -7,11 +7,11 @@ The program numerically solves the Richards' equation for saturated-unsaturated 
 - The Heat transport equation considers conduction as well as convection with flowing water.
 - The Solute transport equations consider advective-dispersive transport in the liquid phase, and diffusion in the gaseous phase
 
-excerpt forom [official website](https://www.pc-progress.com/en/Default.aspx?h1d-description)
+excerpt from [official website](https://www.pc-progress.com/en/Default.aspx?h1d-description)
 
 ## Disclaimer
 
-This repository __only__ is small modification which make source code running on linux machine. If you have any problem about compuation model itself, post on [official forum]( http://www.pc-progress.com/forum/viewforum.php?f=4).
+This repository __only__ is small modification which make source code running on linux machine. If you have any problem about compuation model itself, post your question on [official forum](http://www.pc-progress.com/forum/viewforum.php?f=4)
 
 
 ## Environment
