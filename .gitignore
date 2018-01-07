@@ -1,2 +1,8 @@
 # file name of executable compile by makefile
 hydrus
+
+# output file format
+*.OUT
+*.out
+*.MSG
+*.msg

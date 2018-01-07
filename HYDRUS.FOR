@@ -143,7 +143,7 @@
      !          OmegaW,lEnd,lVaporOut,lFluxOut)
       data iUnit /50,70,71,75,76,77,78/
 
-      cFileName = cDataPath(1:iLengthPath)//'/Selector.in'
+      cFileName = cDataPath(1:iLengthPath)//'/SELECTOR.IN'
       open(30,file=cFileName, status='old',err=901)
       cFileName = cDataPath(1:iLengthPath)//'/PROFILE.DAT'
       open(32,file=cFileName, status='old',err=901)
@@ -751,8 +751,8 @@
       goto 1000
 916   ierr=16
       goto 1000
-c917   ierr=17
-c      goto 1000
+917   ierr=17
+      goto 1000
 918   ierr=18
       goto 1000
 919   ierr=19
