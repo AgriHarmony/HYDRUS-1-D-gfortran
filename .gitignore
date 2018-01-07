@@ -6,3 +6,6 @@ hydrus
 *.out
 *.MSG
 *.msg
+
+# Directory Path File
+*.DIR

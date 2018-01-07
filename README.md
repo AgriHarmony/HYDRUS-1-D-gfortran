@@ -15,12 +15,11 @@ This repository __only__ is small modification which make source code running on
 
 
 ## Environment
-- ubunut 16.04
+- ubunut 16.04 ( or Mac OS )
 - gfortran(gcc version 5.4.0)
 
 ## Usage
-
-1. Copy exmaple related data folder from 
+1. Select example with related data folder from 
     - data/Examples/Direct
     - data/Exmaples/HP1
     - data/Exmaples/Inverse
@@ -30,9 +29,14 @@ For example, if you want to run Direct/TEST10, then copy the folder to input_out
 ```
 cp -r data/Examples/Direct/Test10 input_output/.
 ```
-(Optional: If you want to change reading directory, set path in LEVEL_01.DIR )
 
-Compile the HYDRUS source code then run
+2. Create directory path file __LEVEL_01.DIR__ 
+```shell
+sh create_path.sh 
+```
+Replace the string __TESTCASE__ of __LEVEL_01.DIR__ with same example at 1. (For example, replace TESTCASE with TEST10)
+
+3.Compile the HYDRUS source code then run
 ```
 make;make clean;./hydrus;
 ```

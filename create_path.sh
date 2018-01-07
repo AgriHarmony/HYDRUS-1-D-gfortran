@@ -1,0 +1,3 @@
+touch LEVEL_01.DIR
+CURR_PATH=$(PWD)
+echo "$CURR_PATH/input_output/TESTCASE" >> LEVEL_01.DIR
