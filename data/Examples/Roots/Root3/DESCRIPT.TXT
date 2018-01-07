@@ -1,0 +1,2 @@
+Pcp_File_Version=1
+Compensated root water uptake, 0.5 - GWL (120)
