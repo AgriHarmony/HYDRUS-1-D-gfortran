@@ -1,2 +1,5 @@
 # file name of executable compile by makefile
 hydrus
+
+# Directory Path File
+*.DIR
